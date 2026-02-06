@@ -127,25 +127,7 @@
                                     <i class='bx bx-envelope'></i>
                                 </div>
 
-                                <div class="col-lg-12 col-md-12">
-                                    <div class="form-group">
-                                        <div class="form-check agree-label">
-                                            <input
-                                                name="gridCheck"
-                                                value="I agree to the terms and privacy policy."
-                                                class="form-check-input"
-                                                type="checkbox"
-                                                id="gridCheck"
-                                                required
-                                            >
-                                    
-                                            <label class="form-check-label" for="gridCheck">
-                                                Accept <a href="terms-condition.html">Terms & Conditions</a> And <a href="privacy-policy.html">Privacy Policy.</a>
-                                            </label>
-                                            <div class="help-block with-errors gridCheck-error"></div>
-                                        </div>
-                                    </div>
-                                </div>
+                             
         
                                 <div class="text-center">
                                     <button type="submit" class="default-btn three">Send Your Message <span></span></button>
@@ -160,24 +142,22 @@
                         <div class="contact-info">
                             <div class="section-title-two">
                                 <h2>Contact Info</h2>
-                                <p>We are one of the best agency to make appoint you a good doctor's into a proper way. This will help us to make a proper way of work and this.</p>
                             </div>
                             <ul>
                                 <li>
                                     <i class='bx bx-phone-call'></i>
-                                    <a href="tel:2677844336">+267-784-4336</a>
+                                    <a href="tel:04362227601">04362 227601</a>
                                     <br>
-                                    <a href="tel:+0123456987">+0123 456 987</a>
+                                    <a href="tel:04362227602">04362 227602</a>
                                 </li>
                                 <li>
                                     <i class='bx bx-envelope'></i>
-                                    <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#bed6dbd2d2d1feddd1c8dfc690ddd1d3"><span class="__cf_email__" data-cfemail="78101d141417381b170e1900561b1715">[email&#160;protected]</span></a>
+                                    <a href=""><span class="__cf_email__" data-cfemail="78101d141417381b170e1900561b1715">sugajeevanhospital@gmail.com</span></a>
                                     <br>
-                                    <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#caa3a4aca58aa9a5bcabb2e4a9a5a7"><span class="__cf_email__" data-cfemail="5a33343c351a39352c3b2274393537">[email&#160;protected]</span></a>
                                 </li>
                                 <li>
                                     <i class='bx bx-map'></i>
-                                    5021 Franklee Lane, USA
+                                   No. 167 / 51, 52, Pappammal Paneerselvam Nagar, Nagapattinam By-Pass Road, Melavasthachavadi, Thanjavur.
                                 </li>
                             </ul>
                         </div>
@@ -190,7 +170,7 @@
         <!-- Contact-map -->
         <div class="contact-map">
             <div class="container-fluid">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79397.54906101931!2d-0.18992037562423128!3d51.54700020448168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sus!4v1602044155013!5m2!1sen!2sus"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3098.2092735424817!2d79.10976!3d10.736423199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baab9f44e61defb%3A0x287409c109bd3723!2sSugajeevan%20Speciality%20Hospital!5e1!3m2!1sen!2sin!4v1770397525224!5m2!1sen!2sin"></iframe>
             </div>
         </div>
         <!-- End Contact-map -->
@@ -253,6 +233,63 @@
                         document.getElementById("footer1").innerHTML = data;
                     });
         </script>
+
+        <script>
+  $(document).ready(function () {
+    $('#contact_form').submit(function (event) {
+      event.preventDefault();
+
+      var formData = {
+        u_name:  $('#u_name').val(),
+        u_email: $('#u_email').val(),
+        phone:   $('#phone').val(),
+        message: $('#message').val()
+      };
+
+      $.ajax({
+        type: 'POST',
+        url: 'sendmessage.php',   // change if needed
+        data: formData,
+        dataType: 'json',
+        encode: true
+      })
+      .done(function (response) {
+        // Show mail status
+        $('#response-message')
+          .css('color', response && response.success ? 'green' : 'red')
+          .text(response && response.message ? response.message : 'Submitted.');
+
+        if (response && response.success) {
+          // Build WhatsApp message text
+          var waText = 
+            'New Enquiry%0A' +
+            'Name: '   + (formData.u_name  || '-') + '%0A' +
+            'Email: '  + (formData.u_email || '-') + '%0A' +
+            'Phone: '  + (formData.phone   || '-') + '%0A' +
+            'Message:%0A' + (formData.message || '-');
+
+          var waUrl = 'https://wa.me/919994716276?text=' + waText;
+
+          // Try opening WhatsApp
+          var win = window.open(waUrl, '_blank');
+          if (!win) {
+            $('#response-message').append(
+              ' • <a href="' + waUrl + '" target="_blank" rel="noopener">Tap to send on WhatsApp</a>'
+            );
+          }
+
+          // Reset form
+          $('#contact_form').trigger('reset');
+        }
+      })
+      .fail(function () {
+        $('#response-message')
+          .css('color', 'red')
+          .text('Error occurred while processing the request.');
+      });
+    });
+  });
+</script>
     </body>
 
 </html>
