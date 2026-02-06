@@ -79,7 +79,7 @@ try {
 
     echo json_encode([
         'success'   => true,
-        'message'   => 'Your appointment request has been sent successfully.',
+        'message'   => 'Your contact request has been sent successfully.',
         'messageId' => $result->get('MessageId') ?? null
     ]);
 } catch (AwsException $e) {
