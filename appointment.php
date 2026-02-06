@@ -56,7 +56,7 @@ $body = "New appointment request from the website:\n\n"
 
 // IMPORTANT: These must be verified in SES (or you must be out of sandbox)
 $senderEmail    = 'sugajeevanwebsite@gmail.com';     // FROM (verified)
-$recipientEmail = 'elavarasan5193@gmail.com';   // TO   (verified if SES sandbox)
+$recipientEmail = 'sugajeevanhospital@gmail.com';   // TO   (verified if SES sandbox)
 //$recipientEmail = 'info@drtvshospital.in';   // TO   (verified if SES sandbox)
 
 try {
