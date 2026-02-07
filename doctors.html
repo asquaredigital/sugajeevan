@@ -34,6 +34,25 @@
         <!--=== Title ===-->
         <title>Sugajeevan Hospital</title>
         <link rel="icon" type="image/png" href="assets/img/favicon.png">
+        <style>
+            /* Reduce doctor photo size */
+/* Doctor image resize FIX */
+.doctors-card img{
+    width: 180px;
+    height: 200px;
+    object-fit: cover;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* push content down after reducing image */
+.doctors-card .caption{
+    position: relative;
+    margin-top: 10px;
+}
+
+        </style>
     </head>
     
     <body>
@@ -83,7 +102,6 @@
         <div class="doctors-area bg-f6f4ff ptb-100">
             <div class="container">
                 <div class="section-title-one">
-                    <h2>Let's check-out our special doctors and their acitvity</h2>
                 </div>
 
                 <div class="row">
@@ -129,14 +147,14 @@
 
                     <div class="col-lg-4 col-sm-6">
                         <div class="doctors-card">
-                            <a href="doctors-details.html">
+                            <a href="Dr. Senthilnathan.html">
                                 <img src="assets/img/doctors/Dr. K Senthilnathan.jpg" alt="Image">
                             </a>
                             <div class="d-table">
                                 <div class="d-table-cell">
                                     <div class="caption">
                                         <div class="caption-text">
-                                            <h3><a href="doctors-details.html">Dr. K Senthilnathan</a></h3>
+                                            <h3><a href="Dr. Senthilnathan.html">Dr. K Senthilnathan</a></h3>
                                             <p>Consultant – Urology, Andrology and Transplant Surgery</p>
                                             <a href="#"><span class="__cf_email__" data-cfemail="2248434f4751554d50494f434c62454f434b4e0c414d4f"></span></a>
                                           

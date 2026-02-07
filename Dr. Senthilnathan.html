@@ -34,6 +34,129 @@
         <!--=== Title ===-->
         <title>Sugajeevan Hospital</title>
         <link rel="icon" type="image/png" href="assets/img/favicon.png">
+        <style>
+       /* CARD */
+                .doctor-card{
+                display:flex;
+                gap:32px;
+                padding:28px;
+                border-radius:16px;
+                background:#ffffff;
+                border:1px solid #e6e9ef;
+                box-shadow:0 10px 30px rgba(0,0,0,0.06);
+                margin-bottom:30px;
+                }
+
+                /* LEFT IMAGE */
+                .doctor-card-left{
+                flex:0 0 240px;
+                }
+
+                .doctor-card-left img{
+                width:240px;
+                height:270px;
+                object-fit:cover;
+                border-radius:14px;
+                box-shadow:0 10px 20px rgba(0,0,0,0.08);
+                }
+
+                /* RIGHT CONTENT */
+                .doctor-card-right{
+                flex:1;
+                }
+
+                /* DOCTOR NAME */
+                .doctor-name{
+                margin:0;
+                font-size:24px;
+                font-weight:700;
+                color:#0f172a;
+                }
+
+                /* QUALIFICATION */
+                .doctor-qualification{
+                margin:5px 0 14px;
+                font-size:14px;
+                color:#64748b;
+                font-weight:500;
+                }
+
+                /* BADGES */
+                .doctor-badges{
+                display:flex;
+                flex-wrap:wrap;
+                gap:10px;
+                margin-bottom:14px;
+                }
+
+                .doctor-badges span{
+                background:#eaf2ff;
+                color:#0c90b2;
+                padding:6px 12px;
+                font-size:13px;
+                border-radius:30px;
+                font-weight:600;
+                }
+
+                /* EXPERIENCE HIGHLIGHT */
+                .doctor-exp{
+                background:#f0f7ff;
+                padding:10px 14px;
+                border-left:4px solid #0c90b2;
+                border-radius:8px;
+                margin-bottom:18px;
+                font-size:14px;
+                }
+
+                /* SECTION */
+                .doctor-section{
+                margin-top:18px;
+                padding-top:14px;
+                border-top:1px solid #eef1f6;
+                }
+
+                /* SECTION TITLE */
+                .doctor-section h3{
+                font-size:16px;
+                margin-bottom:8px;
+                color:#0f172a;
+                }
+
+                /* LIST */
+                .doctor-section ul{
+                margin:0;
+                padding-left:18px;
+                color:#334155;
+                column-count:2;              /* MAGIC – makes premium look */
+                column-gap:40px;
+                }
+
+                /* MOBILE RESPONSIVE */
+                @media(max-width:768px){
+
+                .doctor-card{
+                    flex-direction:column;
+                    padding:18px;
+                }
+
+                .doctor-card-left{
+                    flex:auto;
+                    text-align:center;
+                }
+
+                .doctor-card-left img{
+                    width:100%;
+                    height:auto;
+                    max-width:260px;
+                }
+
+                .doctor-section ul{
+                    column-count:1;
+                }
+                }
+
+
+        </style>
     </head>
     
     <body>
@@ -70,19 +193,62 @@
                             <h2>Doctors Details</h2>
                             <ul>
                                 <li><a href="index.html">Home</a></li>
-                                <li>Doctors Details</li>
+                                <li>Dr. Senthilnathan</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End Page Banner Area -->
+       <div class="doctor-card">
 
-        <!-- Services Dateils Area -->
-        <h2 style="margin-top: 100px;height: 100px;text-align: center;">Page Under Updation</h2>
-        <!-- End Services Dateils Area -->
-        
+            <div class="doctor-card-left">
+                <img src="assets/img/doctors/Dr. K Senthilnathan.jpg" alt="Dr K Senthilnathan">
+            </div>
+
+            <div class="doctor-card-right">
+                <h2 class="doctor-name">Dr. K. Senthilnathan</h2>
+                <p class="doctor-qualification">MS, MCh (Urology)</p>
+
+                <div class="doctor-badges">
+                <span>Consultant Urologist</span>
+                <span>Andrologist</span>
+                <span>Laproscopic Transplant Surgeon</span>
+                </div>
+
+                <p class="doctor-exp">
+                <strong>Experience:</strong> 10+ years in Urology, Andrology & Laproscopic Transplant Surgery
+                </p>
+
+                <div class="doctor-section">
+                <h3>Expertise</h3>
+                <ul>
+                    <li>Kidney Stone Management</li>
+                    <li>Prostate Disorders</li>
+                    <li>Uro Oncology</li>
+                    <li>Uro Gynaecology</li>
+                    <li>Male Sexual Problems</li>
+                    <li>Male Infertility</li>
+                    <li>Urinary Tract Infection</li>
+                </ul>
+                </div>
+
+                <div class="doctor-section">
+                <h3>Special Area of Interest</h3>
+                <ul>
+                    <li>Laser Surgeries</li>
+                    <li>Endoscopic & Laparoscopic Urological Surgeries</li>
+                    <li>PCNL</li>
+                    <li>Andrology</li>
+                </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+
+                    
          <!-- Footer Area-->
               <footer id="footer1"></footer>
 
