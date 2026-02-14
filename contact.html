@@ -34,6 +34,115 @@
         <!--=== Title ===-->
         <title>Sugajeevan Hospital</title>
         <link rel="icon" type="image/png" href="assets/img/favicon.png">
+        <style>
+            /* ===== PREMIUM CONTACT ALIGNMENT FIX ===== */
+
+.premium-contact {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.contact-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* each item */
+.contact-list li {
+    display: flex;
+    align-items: center;      /* center icon with title */
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+/* icon */
+.contact-list .icon {
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+    border-radius: 12px;
+    background: #f1f6ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #0d6efd;
+    margin-top: 2px;
+}
+
+/* right side content */
+.contact-list .content {
+    flex: 1;
+}
+
+/* heading */
+.contact-list .label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #222;
+}
+
+/* links */
+.contact-list a {
+    display: block;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #444;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-list a:hover {
+    color: #0d6efd;
+}
+
+/* address */
+.contact-list p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* highlight mobile */
+.contact-list .mobile {
+    font-weight: 600;
+}
+
+/* emergency */
+.contact-list li.emergency .icon {
+    background: #ffe9e9;
+    color: #d90429;
+}
+
+.contact-list li.emergency .label,
+.contact-list li.emergency a {
+    color: #d90429;
+    font-weight: 700;
+}
+.contact-list .icon {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+.contact-list .icon i {
+    margin: 0 !important;
+    padding: 0 !important;
+    position: static !important;
+    left: auto !important;
+}
+
+/* optional: improve vertical harmony */
+.contact-list li {
+    align-items: flex-start;
+}
+        </style>
     </head>
     
     <body>
@@ -135,58 +244,71 @@
                     </div>
 
                    <div class="col-lg-4">
-    <div class="contact-info">
-        <div class="section-title-two">
-            <h2>Contact Info</h2>
-        </div>
+                    <div class="contact-info premium-contact">
+                        <div class="section-title-two">
+                            <h2>Contact Info</h2>
+                        </div>
 
-        <ul>
-            <!-- Reception -->
-            <li>
-                <i class='bx bx-phone-call'></i>
-                <strong>Reception:</strong><br>
-                <a href="tel:04362227601">04362 227601</a><br>
-                <a href="tel:04362227602">04362 227602</a><br>
-                <a href="tel:7200929472">7200929472 (Mobile)</a>
-            </li>
+                        <ul class="contact-list">
 
-            <!-- Emergency -->
-            <li>
-                <i class='bx bx-plus-medical'></i>
-                <strong>Emergency / Casualty:</strong><br>
-                <a href="tel:04362227603">04362 227603</a>
-            </li>
+                            <!-- Reception -->
+                            <li>
+                                <div class="icon"><i class='bx bx-phone-call'></i></div>
+                                <div class="content">
+                                    <div class="label">Reception</div>
+                                    <a href="tel:04362227601">04362 227601</a>
+                                    <a href="tel:04362227602">04362 227602</a>
+                                    <a href="tel:7200929472" class="mobile">7200929472 (Mobile)</a>
+                                </div>
+                            </li>
 
-            <!-- Ambulance -->
-            <li>
-                <i class='bx bx-ambulance'></i>
-                <strong>Ambulance:</strong><br>
-                <a href="tel:04362227603">04362 227603</a><br>
-                <a href="tel:04362227601">04362 227601</a>
-            </li>
+                            <!-- Emergency -->
+                            <li class="emergency">
+                                <div class="icon"><i class='bx bx-plus-medical'></i></div>
+                                <div class="content">
+                                    <div class="label">Emergency / Casualty</div>
+                                    <a href="tel:04362227603">04362 227603</a>
+                                </div>
+                            </li>
 
-            <!-- Emails -->
-            <li>
-                <i class='bx bx-envelope'></i>
-                <strong>Email:</strong><br>
-                Reception:
-                <a href="mailto:sjshinfo@sugajeevanhospital.com">sjshinfo@sugajeevanhospital.com</a><br>
-                Admin:
-                <a href="mailto:sjshadmin@sugajeevanhospital.com">sjshadmin@sugajeevanhospital.com</a><br>
-                HR:
-                <a href="mailto:sjshhr@sugajeevanhospital.com">sjshhr@sugajeevanhospital.com</a>
-            </li>
+                            <!-- Ambulance -->
+                            <li>
+                                <div class="icon"><i class='bx bxs-ambulance'></i></div>
+                                <div class="content">
+                                    <div class="label">Ambulance</div>
+                                    <a href="tel:04362227603">04362 227603</a>
+                                    <a href="tel:04362227601">04362 227601</a>
+                                </div>
+                            </li>
 
-            <!-- Address -->
-            <li>
-                <i class='bx bx-map'></i>
-                No. 167 / 51, 52, Pappammal Paneerselvam Nagar,
-                Nagapattinam By-Pass Road,
-                Melavasthachavadi, Thanjavur.
-            </li>
-        </ul>
-    </div>
-</div>
+                            <!-- Email -->
+                            <li>
+                                <div class="icon"><i class='bx bx-envelope'></i></div>
+                                <div class="content">
+                                    <div class="label">Email</div>
+                                    <a href="mailto:sjshinfo@sugajeevanhospital.com">Reception: sjshinfo@sugajeevanhospital.com</a>
+                                    <a href="mailto:sjshadmin@sugajeevanhospital.com">Admin: sjshadmin@sugajeevanhospital.com</a>
+                                    <a href="mailto:sjshhr@sugajeevanhospital.com">HR: sjshhr@sugajeevanhospital.com</a>
+                                </div>
+                            </li>
+
+                            <!-- Address -->
+                            <li>
+                                <div class="icon"><i class='bx bx-map'></i></div>
+                                <div class="content">
+                                    <div class="label">Address</div>
+                                    <p>
+                                        No. 167 / 51, 52, Pappammal Paneerselvam Nagar,<br>
+                                        Nagapattinam By-Pass Road,<br>
+                                        Melavasthachavadi, Thanjavur.
+                                    </p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
 
                 </div>
             </div>

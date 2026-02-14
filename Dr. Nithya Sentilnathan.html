@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    
+<head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+       <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- BoxIcon Css -->
+        <link rel="stylesheet" href="assets/css/boxicons.min.css">
+        <!-- MeanMenu CSS -->
+        <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+        <!-- Nice Select CSS -->
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <!-- Owl Theme CSS -->
+        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+        <!-- Magnific CSS -->
+        <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+        <!-- Jquery DateTimePicker CSS -->
+        <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css" />
+        <!-- StyleSheet CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <!-- Theme Dark CSS -->
+        <link rel="stylesheet" href="assets/css/theme-dark.css">
+
+        <!--=== Title ===-->
+        <title>Sugajeevan Hospital</title>
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+        <style>
+       /* CARD */
+                .doctor-card{
+                display:flex;
+                gap:32px;
+                padding:28px;
+                border-radius:16px;
+                background:#ffffff;
+                border:1px solid #e6e9ef;
+                box-shadow:0 10px 30px rgba(0,0,0,0.06);
+                margin-bottom:30px;
+                }
+
+                /* LEFT IMAGE */
+                .doctor-card-left{
+                flex:0 0 240px;
+                }
+
+                .doctor-card-left img{
+                width:240px;
+                height:270px;
+                object-fit:cover;
+                border-radius:14px;
+                box-shadow:0 10px 20px rgba(0,0,0,0.08);
+                }
+
+                /* RIGHT CONTENT */
+                .doctor-card-right{
+                flex:1;
+                }
+
+                /* DOCTOR NAME */
+                .doctor-name{
+                margin:0;
+                font-size:24px;
+                font-weight:700;
+                color:#0f172a;
+                }
+
+                /* QUALIFICATION */
+                .doctor-qualification{
+                margin:5px 0 14px;
+                font-size:14px;
+                color:#64748b;
+                font-weight:500;
+                }
+
+                /* BADGES */
+                .doctor-badges{
+                display:flex;
+                flex-wrap:wrap;
+                gap:10px;
+                margin-bottom:14px;
+                }
+
+                .doctor-badges span{
+                background:#eaf2ff;
+                color:#0c90b2;
+                padding:6px 12px;
+                font-size:13px;
+                border-radius:30px;
+                font-weight:600;
+                }
+
+                /* EXPERIENCE HIGHLIGHT */
+                .doctor-exp{
+                background:#f0f7ff;
+                padding:10px 14px;
+                border-left:4px solid #0c90b2;
+                border-radius:8px;
+                margin-bottom:18px;
+                font-size:14px;
+                }
+
+                /* SECTION */
+                .doctor-section{
+                margin-top:18px;
+                padding-top:14px;
+                border-top:1px solid #eef1f6;
+                }
+
+                /* SECTION TITLE */
+                .doctor-section h3{
+                font-size:16px;
+                margin-bottom:8px;
+                color:#0f172a;
+                }
+
+                /* LIST */
+                .doctor-section ul{
+                margin:0;
+                padding-left:18px;
+                color:#334155;
+                column-count:2;              /* MAGIC – makes premium look */
+                column-gap:40px;
+                }
+
+                /* MOBILE RESPONSIVE */
+                @media(max-width:768px){
+
+                .doctor-card{
+                    flex-direction:column;
+                    padding:18px;
+                }
+
+                .doctor-card-left{
+                    flex:auto;
+                    text-align:center;
+                }
+
+                .doctor-card-left img{
+                    width:100%;
+                    height:auto;
+                    max-width:260px;
+                }
+
+                .doctor-section ul{
+                    column-count:1;
+                }
+                }
+
+
+        </style>
+    </head>
+    
+    <body>
+        <!-- Preloader Area -->
+        <div class="preloader">
+            <div class="container">
+                <div class="d-table">
+                    <div class="d-table-cell">
+                        <div class="preloader loading">
+                            <span class="slice"></span>
+                            <span class="slice"></span>
+                            <span class="slice"></span>
+                            <span class="slice"></span>
+                            <span class="slice"></span>
+                            <span class="slice"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader Area -->
+
+        <!-- Start Navbar Area -->
+            <header id="header1"></header>
+
+        <!-- End Navbar Area -->
+
+        <!-- Page Banner Area -->
+        <div class="page-banner-area bg-5">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="container">
+                        <div class="page-content">
+                            <h2>Doctors Details</h2>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li>Dr. Nithya Senthilnathan</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="doctor-card">
+
+    <div class="doctor-card-left">
+        <img src="assets/img/doctors/Dr. D Nithya Senthilnathan.jpg" alt="Dr D Nithya Senthilnathan">
+    </div>
+
+    <div class="doctor-card-right">
+        <h2 class="doctor-name">Dr. D Nithya Senthilnathan</h2>
+        <p class="doctor-qualification">
+            Consultant Obstetrician, Gynaecologist, Infertility & Laparoscopic Specialist
+        </p>
+
+        <div class="doctor-badges">
+            <span>Obstetrician</span>
+            <span>Gynaecologist</span>
+            <span>Infertility Specialist</span>
+            <span>Laparoscopic Surgeon</span>
+        </div>
+
+        <p class="doctor-exp">
+            <strong>Experience:</strong> 10+ years in Obstetrics, Gynaecology & Infertility
+        </p>
+
+        <div class="doctor-section">
+            <h3>Expertise</h3>
+            <ul>
+                <li>Painless Normal Delivery</li>
+                <li>Vaginal Birth After Caesarean</li>
+                <li>Caesarean Delivery</li>
+                <li>Laparoscopic / Open Hysterectomy</li>
+                <li>Infertility – IUI, PCOS Drilling, Diagnostic Hysterolap</li>
+                <li>Family Planning – Copper T Insertion & Removal</li>
+                <li>Laparoscopic / Open Sterilization</li>
+                <li>Adolescent Gynaecology</li>
+                <li>Preventive Oncology – HPV Vaccination, Pap Smear</li>
+                <li>Minimal Invasive Surgery</li>
+                <li>Cosmetic Gynaecology</li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+                    
+         <!-- Footer Area-->
+              <footer id="footer1"></footer>
+
+        <!-- End Footer Bottom Area -->
+
+        <!-- Go Top -->
+        <div class="go-top">
+            <i class='bx bxs-upvote'></i>
+        </div>
+        <!-- End Go Top -->
+
+        <!-- jQuery first, then Bootstrap JS -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- Magnific -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- MeanMenu JS -->
+        <script src="assets/js/meanmenu.min.js"></script>
+        <!-- Nice Select JS -->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!-- Owl Carousel JS -->
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <!-- Jquery Mixitup JS -->
+        <script src="assets/js/jquery.mixitup.min.js"></script>
+        <!-- Jquery DateTimePicker JS -->
+        <script src="assets/js/jquery.datetimepicker.full.min.js"></script> 
+        <!-- Form Validator JS -->
+        <script src="assets/js/form-validator.min.js"></script>
+        <!-- Contact JS -->
+        <script src="assets/js/contact-form-script.js"></script>
+        <!-- AjaxChimp JS -->
+        <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+        <!-- Custom JS -->
+        <script src="assets/js/custom.js"></script>
+         <script>
+                function initMenus() {
+                    // Re-init MeanMenu AFTER header is injected
+                    if (typeof jQuery !== "undefined" && typeof jQuery.fn.meanmenu !== "undefined") {
+                        jQuery('.mean-menu').meanmenu({
+                            meanScreenWidth: "1021" // use same value as your theme
+                        });
+                    }
+                }
+
+                // Load header
+                fetch("header.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("header1").innerHTML = data;
+                        initMenus(); // important: call after inserting header HTML
+                    });
+
+                // Load footer
+                fetch("footer.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("footer1").innerHTML = data;
+                    });
+        </script>
+    </body>
+
+</html>
