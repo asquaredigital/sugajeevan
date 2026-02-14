@@ -54,8 +54,8 @@ $body = "New Enquiry from the website:\n\n"
 
 // IMPORTANT: These must be verified in SES (or you must be out of sandbox)
 $senderEmail    = 'sugajeevanwebsite@gmail.com';     // FROM (verified)
-//$recipientEmail = 'sjshinfo@sugajeevanhospital.com';   // TO   (verified if SES sandbox)
-$recipientEmail = 'elavarasan5193@gmail.com';   // TO   (verified if SES sandbox)
+$recipientEmail = 'sjshinfo@sugajeevanhospital.com';   // TO   (verified if SES sandbox)
+//$recipientEmail = 'elavarasan5193@gmail.com';   // TO   (verified if SES sandbox)
 
 try {
     $result = $sesClient->sendEmail([
