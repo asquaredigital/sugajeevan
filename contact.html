@@ -260,9 +260,9 @@
             'Name: '   + (formData.u_name  || '-') + '%0A' +
             'Email: '  + (formData.u_email || '-') + '%0A' +
             'Phone: '  + (formData.phone   || '-') + '%0A' +
-            'Message:%0A' + (formData.message || '-');
+            'Message: ' + (formData.message || '-');
 
-          /*var waUrl = 'https://wa.me/919962112230?text=' + waText;
+          var waUrl = 'https://wa.me/919962112230?text=' + waText;
 
           // Try opening WhatsApp
           var win = window.open(waUrl, '_blank');
@@ -271,9 +271,9 @@
               ' • <a href="' + waUrl + '" target="_blank" rel="noopener">Tap to send on WhatsApp</a>'
             );
           }
-            */
+            
           // Reset form
-          $('#contactform').trigger('reset');
+          $('#contactForm').trigger('reset');
         }
       })
       .fail(function () {
