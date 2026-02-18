@@ -1,155 +1,204 @@
+ <style>
+
+
+/* =====================================
+   FIX NAVBAR FLEX STRUCTURE
+===================================== */
+
+.main-navbar .navbar .container {
+    display: flex;
+    align-items: center;
+}
+
+/* Prevent menu text breaking */
+.navbar-nav .nav-link {
+    white-space: nowrap;
+}
+
+/* =====================================
+   DESKTOP HEADER (main-navbar)
+===================================== */
+
+.main-navbar .appointment-box {
+    margin-left: 30px;
+    padding-left: 20px;
+    border-left: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.main-navbar .appointment-box span {
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 8px;
+    color: #0e2647;
+}
+
+.main-navbar .appointment-box a {
+    background: #0c90b2;
+    color: #ffffff;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(12,144,178,0.4);
+    transition: all 0.3s ease;
+}
+
+.main-navbar .appointment-box a:hover {
+    background: #087a96;
+    transform: translateY(-2px);
+}
+
+
+/* =====================================
+   MOBILE HEADER (main-responsive-nav)
+*/
+.main-responsive-nav .mobile-appointment {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.main-responsive-nav .mobile-appointment span {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.main-responsive-nav .mobile-appointment a {
+    display: inline-block;
+    margin: 0 auto;
+    background: #0c90b2;
+    color: #ffffff !important;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 6px 16px rgba(12,144,178,0.4);
+}
+
+/* =========================================
+   FIX MISSING MENU BETWEEN 992px–1199px
+========================================= */
+
+/* Force desktop navbar visible from 992px */
+@media (min-width: 992px) {
+
+    .main-navbar {
+        display: block !important;
+    }
+
+    .main-responsive-nav {
+        display: none !important;
+    }
+}
+
+/* Show mobile navbar below 992px */
+@media (max-width: 991px) {
+
+    .main-navbar {
+        display: none !important;
+    }
+
+    .main-responsive-nav {
+        display: block !important;
+    }
+}
+
+
+</style>
+
+
+
+
  <div class="navbar-area bg-white">
-            <div class="main-responsive-nav">
-                <div class="container">
-                    <div class="main-responsive-menu">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img src="assets/img/logo.png" alt="image">
-                            </a>
-                        </div>
-                    </div>
+
+    <!-- MOBILE NAV -->
+    <div class="main-responsive-nav">
+        <div class="container">
+            <div class="main-responsive-menu">
+
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/img/logo.png" alt="image">
+                    </a>
                 </div>
+
+                <!-- MOBILE APPOINTMENT -->
+                <div class="mobile-appointment">
+                    <span>For Appointments :</span>
+                    <a href="tel:04362227601">04362 227601</a>
+                </div>
+
             </div>
+        </div>
+    </div>
 
-            <div class="main-navbar">
-                <nav class="navbar navbar-expand-md navbar-two bg-white">
-                    <div class="container p-relative">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="assets/img/logo.png" alt="image">
-                        </a>
+    <!-- DESKTOP NAV -->
+    <div class="main-navbar">
+        <nav class="navbar navbar-expand-md navbar-two bg-white">
+            <div class="container p-relative">
 
-                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item">
-                                     <a href="index.html" class="nav-link">
-                                        Home 
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="about.html" class="nav-link">
-                                         About Us
-                                    </a>
-                                </li>
-                                   <li class="nav-item">
-                                     <a href="departments.html" class="nav-link">
-                                        Departments 
-                                        <i class='bx bx-chevron-down'></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="services-details.html" class="nav-link">
-                                                Orthopedics
-                                            </a>
-                                        </li>
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo.png" alt="image">
+                </a>
 
-                                        <li class="nav-item">
-                                            <a href="services-details.html" class="nav-link">
-                                                Neurosurgery
-                                            </a>
-                                        </li>
-                                         <li class="nav-item">
-                                            <a href="services-details.html" class="nav-link">
-                                                Urology
-                                            </a>
-                                           
-                                        </li>
-                                          <li class="nav-item">
-                                            <a href="services-details.html" class="nav-link">
-                                                Nephrology
-                                            </a>
-                                           
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="services-details.html" class="nav-link">
-                                                Gynaecology
-                                            </a>
-                                           
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="services-details.html" class="nav-link">
-                                                Diabetes
-                                            </a>
-                                           
-                                        </li>
-                                    </ul>
-                                </li>
-                             
-                                <li class="nav-item">
-                                    <a href="doctors.html" class="nav-link">
-                                        Our doctors 
-                                    </a>
-                                   
-                                </li>
+                <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                                    <a href="gallery.html" class="nav-link">
-                                        Gallery 
-                                    </a>
-                                  
-                                </li>
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
 
-                                <li class="nav-item">
-                                    <a href="events.html" class="nav-link">
-                                        Events 
-                                    </a>
-                                  
-                                </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About Us</a>
+                        </li>
 
-                                <li class="nav-item">
-                                    <a href="contact.html" class="nav-link">
-                                        Contact Us 
-                                    </a>
-                                </li>
-
-                              
-
-                                <li class="nav-btn">
-                                    <a href="appoinments.html" class="default-btn">
-                                        Book Appointment
-                                        <span></span>
-                                    </a>
-                                </li>
+                        <li class="nav-item">
+                            <a href="departments.html" class="nav-link">
+                                Departments <i class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="services-details.html" class="nav-link">Orthopedics</a></li>
+                                <li class="nav-item"><a href="services-details.html" class="nav-link">Neurosurgery</a></li>
+                                <li class="nav-item"><a href="services-details.html" class="nav-link">Urology</a></li>
+                                <li class="nav-item"><a href="services-details.html" class="nav-link">Nephrology</a></li>
+                                <li class="nav-item"><a href="services-details.html" class="nav-link">Gynaecology</a></li>
+                                <li class="nav-item"><a href="services-details.html" class="nav-link">Diabetes</a></li>
                             </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!-- End Navbar Area -->
+                        </li>
 
-        <!-- Banner Three Area -->
-        <div class="banner-slide-three owl-carousel owl-theme">
-            <div class="banner-three-area">
-                <div class="container">
-                    <div class="banner-three-text">
-                        <span>Explore us all</span>
-                        <h1>Sugajeevan Hospital</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                        <div class="b-three-btn">
-                            <a href="departments.html" class="default-btn three">
-                                Departments
-                                <span></span>
-                            </a>
-                            <a href="appoinments.html" class="default-btn three">
-                                Get an Appointment
-                                <span></span>
-                            </a>
-                        </div>
-                    </div>
+                        <li class="nav-item">
+                            <a href="doctors.html" class="nav-link">Our Doctors</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="gallery.html" class="nav-link">Gallery</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="events.html" class="nav-link">Events</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="banner-three-area">
-                <div class="container">
-                    <div class="banner-three-text">
-                        <span>Explore us all</span>
-                        <h1>Sugajeevan Hospital</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                        <div class="b-three-btn">
-                            <a href="appoinments.html" class="default-btn three">
-                                Get an Appointment
-                                <span></span>
-                            </a>
-                        </div>
-                    </div>
+
+                <!-- DESKTOP APPOINTMENT -->
+                <div class="appointment-box">
+                    <span>For Appointments :</span>
+                    <a href="tel:04362227601">04362 227601</a>
                 </div>
+
             </div>
-        </div>
+        </nav>
+    </div>
+
+</div>
