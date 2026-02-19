@@ -1,8 +1,7 @@
- <style>
-
+<style>
 
 /* =====================================
-   FIX NAVBAR FLEX STRUCTURE
+   FLEX STRUCTURE
 ===================================== */
 
 .main-navbar .navbar .container {
@@ -10,13 +9,12 @@
     align-items: center;
 }
 
-/* Prevent menu text breaking */
 .navbar-nav .nav-link {
     white-space: nowrap;
 }
 
 /* =====================================
-   DESKTOP HEADER (main-navbar)
+   DESKTOP APPOINTMENT
 ===================================== */
 
 .main-navbar .appointment-box {
@@ -44,82 +42,173 @@
     font-weight: 700;
     text-decoration: none;
     box-shadow: 0 4px 14px rgba(12,144,178,0.4);
-    transition: all 0.3s ease;
 }
-
-.main-navbar .appointment-box a:hover {
-    background: #087a96;
-    transform: translateY(-2px);
-}
-
 
 /* =====================================
-   MOBILE HEADER (main-responsive-nav)
-*/
-.main-responsive-nav .mobile-appointment {
-    text-align: center;
+   LANGUAGE PILLS
+===================================== */
+
+.lang-pill {
+    border: none;
+    background: #e9ecef;
+    padding: 6px 18px;
+    margin-left: 8px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0c90b2;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.lang-pill.active {
+    background: #0c90b2;
+    color: #ffffff;
+}
+
+/* =====================================
+   DESKTOP LANGUAGE ROW
+===================================== */
+
+.header-lang-row {
+    background: #ffffff;
+    padding: 8px 0;
+    border-top: 1px solid #eee;
+}
+
+.header-lang-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* =====================================
+   COMPACT MOBILE TOP BAR
+===================================== */
+
+.mobile-top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 6px 10px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.mobile-call {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0c90b2;
+    text-decoration: none;
+}
+
+.mobile-lang-switch .lang-pill {
+    padding: 4px 10px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+/* =====================================
+   RESPONSIVE CONTROL
+===================================== */
+
+@media (max-width: 991px) {
+    .header-lang-row { display: none; }
+}
+
+@media (min-width: 992px) {
+    .mobile-top-bar { display: none; }
+}
+
+/* =====================================
+   PROFESSIONAL MEGA MENU
+===================================== */
+
+.mega-menu {
+    position: static;
+}
+
+.mega-menu .mega-dropdown {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 650px;
+    padding: 25px 30px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+    border: none;
     margin-top: 15px;
 }
 
-.main-responsive-nav .mobile-appointment span {
+.mega-menu-content {
+    display: flex;
+    gap: 40px;
+}
+
+.mega-menu-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+}
+
+.mega-menu-content ul li {
+    margin-bottom: 14px;
+}
+
+.mega-menu-content ul li a {
     display: block;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 8px;
-    color: #333;
-}
-
-.main-responsive-nav .mobile-appointment a {
-    display: inline-block;
-    margin: 0 auto;
-    background: #0c90b2;
-    color: #ffffff !important;
-    padding: 10px 24px;
-    border-radius: 50px;
+    color: #0e2647;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 500;
     text-decoration: none;
-    box-shadow: 0 6px 16px rgba(12,144,178,0.4);
+    transition: all 0.3s ease;
 }
 
-/* =========================================
-   FIX MISSING MENU BETWEEN 992px–1199px
-========================================= */
-
-/* Force desktop navbar visible from 992px */
-@media (min-width: 992px) {
-
-    .main-navbar {
-        display: block !important;
-    }
-
-    .main-responsive-nav {
-        display: none !important;
-    }
+.mega-menu-content ul li a:hover {
+    color: #0c90b2;
+    padding-left: 6px;
 }
 
-/* Show mobile navbar below 992px */
+.mega-dropdown {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.mega-menu:hover .mega-dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
 @media (max-width: 991px) {
-
-    .main-navbar {
-        display: none !important;
+    .mega-menu .mega-dropdown {
+        position: static;
+        transform: none;
+        width: 100%;
+        box-shadow: none;
+        padding: 15px;
     }
 
-    .main-responsive-nav {
-        display: block !important;
+    .mega-menu-content {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .mega-menu-content ul {
+        width: 100%;
     }
 }
-
 
 </style>
 
 
 
+<div class="navbar-area bg-white">
 
- <div class="navbar-area bg-white">
-
-    <!-- MOBILE NAV -->
+    <!-- ================= MOBILE NAV ================= -->
     <div class="main-responsive-nav">
         <div class="container">
             <div class="main-responsive-menu">
@@ -130,18 +219,26 @@
                     </a>
                 </div>
 
-                <!-- MOBILE APPOINTMENT -->
-                <div class="mobile-appointment">
-                    <span>For Appointments :</span>
-                    <a href="tel:04362227601">04362 227601</a>
+                <!-- COMPACT MOBILE TOP BAR -->
+                <div class="mobile-top-bar">
+                    <a href="tel:04362227601" class="mobile-call">
+                        📞 04362 227601
+                    </a>
+
+                    <div class="mobile-lang-switch">
+                        <button class="lang-pill active" onclick="switchLanguage('ta')">TA</button>
+                        <button class="lang-pill" onclick="switchLanguage('en')">EN</button>
+                    </div>
                 </div>
 
             </div>
         </div>
     </div>
 
-    <!-- DESKTOP NAV -->
+
+    <!-- ================= DESKTOP NAV ================= -->
     <div class="main-navbar">
+
         <nav class="navbar navbar-expand-md navbar-two bg-white">
             <div class="container p-relative">
 
@@ -149,49 +246,21 @@
                     <img src="assets/img/logo.png" alt="image">
                 </a>
 
-                <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse mean-menu">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link">Home</a>
-                        </li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
 
-                        <li class="nav-item">
-                            <a href="about.html" class="nav-link">About Us</a>
-                        </li>
+                         <li class="nav-item"><a href="services-details.html" class="nav-link">Departments</a></li>
 
-                        <li class="nav-item">
-                            <a href="departments.html" class="nav-link">
-                                Departments <i class='bx bx-chevron-down'></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="services-details.html" class="nav-link">Orthopedics</a></li>
-                                <li class="nav-item"><a href="services-details.html" class="nav-link">Neurosurgery</a></li>
-                                <li class="nav-item"><a href="services-details.html" class="nav-link">Urology</a></li>
-                                <li class="nav-item"><a href="services-details.html" class="nav-link">Nephrology</a></li>
-                                <li class="nav-item"><a href="services-details.html" class="nav-link">Gynaecology</a></li>
-                                <li class="nav-item"><a href="services-details.html" class="nav-link">Diabetes</a></li>
-                            </ul>
-                        </li>
 
-                        <li class="nav-item">
-                            <a href="doctors.html" class="nav-link">Our Doctors</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="gallery.html" class="nav-link">Gallery</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="events.html" class="nav-link">Events</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="contact.html" class="nav-link">Contact Us</a>
-                        </li>
+                        <li class="nav-item"><a href="doctors.html" class="nav-link">Our Doctors</a></li>
+                        <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                        <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
                     </ul>
                 </div>
 
-                <!-- DESKTOP APPOINTMENT -->
                 <div class="appointment-box">
                     <span>For Appointments :</span>
                     <a href="tel:04362227601">04362 227601</a>
@@ -199,6 +268,17 @@
 
             </div>
         </nav>
+
+        <!-- DESKTOP LANGUAGE ROW -->
+        <div class="header-lang-row">
+            <div class="container">
+                <div class="header-lang-wrapper">
+                    <button class="lang-pill active" onclick="switchLanguage('ta')">தமிழ்</button>
+                    <button class="lang-pill" onclick="switchLanguage('en')">English</button>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 </div>

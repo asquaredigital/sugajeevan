@@ -196,10 +196,76 @@
     background: #eef9fc;
 }
 
+.lang-btn {
+    border: 1px solid #0c90b2;
+    background: white;
+    color: #0c90b2;
+    padding: 6px 18px;
+    margin-left: 6px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.lang-btn.active,
+.lang-btn:hover {
+    background: #0c90b2;
+    color: white;
+}
+
+.default-btn.three {
+    width: 170px;
+    text-align: center;
+}
+/* =========================
+   FIXED GLOBAL LANGUAGE SWITCH
+========================= */
+
+.global-language-switch {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    background: #ffffff;
+    padding: 6px 10px;
+    border-radius: 30px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.global-language-switch .lang-btn {
+    border: none;
+    background: transparent;
+    color: #0c90b2;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.global-language-switch .lang-btn.active {
+    background: #0c90b2;
+    color: #fff;
+}
+
+/* Prevent overlap on mobile */
+@media (max-width: 768px) {
+    .global-language-switch {
+        top: 15px;
+        right: 10px;
+        padding: 5px 8px;
+    }
+}
+
+
+
   </style>
     </head>
     
     <body>
+      
+
         <!-- Preloader Area -->
         <div class="preloader">
             <div class="container">
@@ -222,118 +288,305 @@
         <!-- Start Navbar Area -->
           <header id="header1"></header>
            <!-- Banner Three Area -->
-        <div class="banner-slide-three owl-carousel owl-theme">
-            <div class="banner-three-area">
-                <div class="container">
-                    <div class="banner-three-text">
-                        <span>The Healing Touch</span>
-                        <h1>Sugajeevan Multispecialty Hospital</h1>
-                        <p>Sugajeevan Speciality Hospital, Thanjavur is a multi-speciality healthcare centre committed to providing comprehensive medical services at affordable costs. </p>
-                        <div class="b-three-btn">
-                                                       <a href="about.html" class="default-btn three">
-                               About Us
-                                <span></span>
-                            </a>
-                        </div>
-                    </div>
+       <div class="banner-slide-three owl-carousel owl-theme">
+
+    <!-- SLIDE 1 -->
+    <div class="banner-three-area">
+        <div class="container">
+            <div class="banner-three-text">
+
+                <!-- Tamil (Default) -->
+                <div class="lang-content ta">
+                    <span>The Healing Touch</span>
+                    <h1>Sugajeevan Multispecialty Hospital</h1>
+                    <p>
+                        சுகஜீவன் ஸ்பெஷாலிட்டி மருத்துவமனை, தஞ்சாவூர் –
+                        மல்டி ஸ்பெஷாலிட்டி சுகாதார மையமாக இருந்து,
+                        முழுமையான மருத்துவ சேவைகளை மலிவான செலவில் வழங்க உறுதிபூண்டுள்ளது.
+                    </p>
                 </div>
-            </div>
-            <div class="banner-three-area">
-                <div class="container">
-                    <div class="banner-three-text">
-                        <span>The Healing Touch</span>
-                        <h1>Sugajeevan Multispecialty Hospital</h1>
-                        <p>Sugajeevan Speciality Hospital, Thanjavur is a multi-speciality healthcare centre committed to providing comprehensive medical services at affordable costs. </p>
-                        <div class="b-three-btn">
-                            <a href="about.html" class="default-btn three">
-                               About Us
-                                <span></span>
-                            </a>
-                        </div>
-                    </div>
+
+                <!-- English -->
+                <div class="lang-content en" style="display:none;">
+                    <span>The Healing Touch</span>
+                    <h1>Sugajeevan Multispecialty Hospital</h1>
+                    <p>
+                        Sugajeevan Speciality Hospital, Thanjavur is a multi-speciality
+                        healthcare centre committed to providing comprehensive
+                        medical services at affordable costs.
+                    </p>
                 </div>
+
+                <!-- Button -->
+                <div class="b-three-btn">
+
+                    <a href="about.html" class="default-btn three lang-content ta">
+                        எங்களை பற்றி
+                        <span></span>
+                    </a>
+
+                    <a href="about.html" class="default-btn three lang-content en" style="display:none;">
+                        About Us
+                        <span></span>
+                    </a>
+
+                </div>
+
             </div>
         </div>
+    </div>
+
+
+    <!-- SLIDE 2 -->
+    <div class="banner-three-area">
+        <div class="container">
+            <div class="banner-three-text">
+
+                <!-- Tamil -->
+                <div class="lang-content ta">
+                     <span>The Healing Touch</span>
+                    <h1>Sugajeevan Multispecialty Hospital</h1>
+                    <p>
+                        சுகஜீவன் ஸ்பெஷாலிட்டி மருத்துவமனை, தஞ்சாவூர் –
+                        மல்டி ஸ்பெஷாலிட்டி சுகாதார மையமாக இருந்து,
+                        முழுமையான மருத்துவ சேவைகளை மலிவான செலவில் வழங்க உறுதிபூண்டுள்ளது.
+                    </p>
+                </div>
+
+                <!-- English -->
+                <div class="lang-content en" style="display:none;">
+                    <span>The Healing Touch</span>
+                    <h1>Sugajeevan Multispecialty Hospital</h1>
+                    <p>
+                        Sugajeevan Speciality Hospital, Thanjavur is a multi-speciality
+                        healthcare centre committed to providing comprehensive
+                        medical services at affordable costs.
+                    </p>
+                </div>
+
+                <!-- Button -->
+                <div class="b-three-btn">
+
+                    <a href="about.html" class="default-btn three lang-content ta">
+                        எங்களை பற்றி
+                        <span></span>
+                    </a>
+
+                    <a href="about.html" class="default-btn three lang-content en" style="display:none;">
+                        About Us
+                        <span></span>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
         <!-- End Banner Three Area -->
-        <div class="appointment-three ptb-100">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="a-three-text">
-                            <div class="section-title-two three">
-                                <h2>About Us</h2>
-                                <p>At Sugajeevan Multispeciality Hospital, we are driven by one guiding principle — “Healing with Compassion and Excellence.”  Located at Melavasthachavadi ,Thanjavur, our 100-bedded facility ensures that world-class medical care is always within your reach.We are committed to delivering comprehensive, patient-focused healthcare through a strong culture of teamwork among our medical and non-medical professionals. </p>
-                                <p>Our hospital operates 24×7, providing advanced diagnostic and therapeutic services supported by state-of-the-art infrastructure, modern technology, and highly qualified, dedicated staff.Our goal is to combine medical expertise with empathy, ensuring every patient receives the highest standards of treatment, comfort, and care.</p> 
+       <div class="appointment-three ptb-100">
+    <div class="container">
 
-                              
-                            </div>
+        <!-- Language Toggle -->
+       
 
-                            <div class="a-three-text-btn">
-                                <a href="about.html" class="default-btn three">
-                                    Read more
-                                    <span></span>
-                                </a>
-                            </div>
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+                <div class="a-three-text">
+                    <div class="section-title-two three">
+
+                        <!-- Tamil (Default) -->
+                        <div class="lang-content ta">
+
+                            <h2>எங்களை பற்றி</h2>
+
+                            <p>
+                                “அன்பும் திறமையும் இணைந்த சிகிச்சை” என்பது எங்கள் வழிகாட்டும் கொள்கை.
+                                மேலவஸ்தச்சாவடி, தஞ்சாவூரில் அமைந்துள்ள எங்கள் 100 படுக்கைகள் கொண்ட மருத்துவமனை,
+                                உலகத் தரம் வாய்ந்த மருத்துவ சேவையை மக்களுக்கு எட்டும் தூரத்தில் வழங்குகிறது.
+                                நாங்கள் விரிவான, நோயாளி மையப்படுத்தப்பட்ட சுகாதார சேவையை
+                                மருத்துவ மற்றும் மருத்துவமல்லாத பணியாளர்களின் ஒருங்கிணைந்த அணுகுமுறையின் மூலம் வழங்குகிறோம்.
+                            </p>
+
+                            <p>
+                                24×7 செயல்படும் எங்கள் மருத்துவமனை, நவீன உள்கட்டமைப்பு,
+                                மேம்பட்ட மருத்துவ தொழில்நுட்பம் மற்றும் தகுதியான, அர்ப்பணிப்புடன் செயல்படும் பணியாளர்களுடன்
+                                மேம்பட்ட பரிசோதனை மற்றும் சிகிச்சை சேவைகளை வழங்குகிறது.
+                                ஒவ்வொரு நோயாளிக்கும் உயர்ந்த தரமான சிகிச்சை, வசதி மற்றும் பராமரிப்பு வழங்குவதே எங்கள் நோக்கம்.
+                            </p>
+
                         </div>
+
+                        <!-- English -->
+                        <div class="lang-content en" style="display:none;">
+
+                            <h2>About Us</h2>
+
+                            <p>
+                                At Sugajeevan Multispeciality Hospital, we are driven by one guiding principle —
+                                “Healing with Compassion and Excellence.” Located at Melavasthachavadi, Thanjavur,
+                                our 100-bedded facility ensures that world-class medical care is always within your reach.
+                                We are committed to delivering comprehensive, patient-focused healthcare through a strong culture of teamwork among our medical and non-medical professionals.
+                            </p>
+
+                            <p>
+                                Our hospital operates 24×7, providing advanced diagnostic and therapeutic services supported by state-of-the-art infrastructure, modern technology, and highly qualified, dedicated staff.
+                                Our goal is to combine medical expertise with empathy, ensuring every patient receives the highest standards of treatment, comfort, and care.
+                            </p>
+
+                        </div>
+
                     </div>
 
-                    <div class="col-lg-6">
-                        <div class="appointment-three-img">
-                            <img src="assets/img/services/service-1.jpg" alt="Image">
-                        </div>
+                    <div class="a-three-text-btn">
+                       <a href="about.html" class="default-btn three lang-content ta">
+    மேலும் அறிய
+    <span></span>
+</a>
+
+<a href="about.html" class="default-btn three lang-content en" style="display:none;">
+    Read more
+    <span></span>
+</a>
+
                     </div>
+
                 </div>
             </div>
+
+            <div class="col-lg-6">
+                <div class="appointment-three-img">
+                    <img src="assets/img/services/service-1.jpg" alt="Image">
+                </div>
+            </div>
+
         </div>
+    </div>
+</div>
+
         <!-- Choose Area -->
-       <div class="why-choose-area ptb-100">
+      <div class="why-choose-area ptb-100">
     <div class="container">
-        
+
+        <!-- Section Title -->
         <div class="section-title text-center">
-            <h2>Why Choose Us</h2>
+
+            <!-- Tamil -->
+            <div class="lang-content ta">
+                <h2>ஏன் எங்களை தேர்வு செய்ய வேண்டும்</h2>
+            </div>
+
+            <!-- English -->
+            <div class="lang-content en" style="display:none;">
+                <h2>Why Choose Us</h2>
+            </div>
+
         </div>
 
         <div class="row">
 
+            <!-- QUALITY -->
             <div class="col-lg-4 col-md-6">
                 <div class="why-card">
-                    <h3>Quality</h3>
-                    <p>We strive to deliver the highest standard of clinical excellence and patient safety in every service we provide.</p>
+
+                    <div class="lang-content ta">
+                        <h3>தரம் (Quality)</h3>
+                        <p>எங்கள் அனைத்து சேவைகளிலும் மிக உயர்ந்த தரமான மருத்துவ சிறப்பையும் நோயாளி பாதுகாப்பையும் வழங்க நாங்கள் பாடுபடுகிறோம்.</p>
+                    </div>
+
+                    <div class="lang-content en" style="display:none;">
+                        <h3>Quality</h3>
+                        <p>We strive to deliver the highest standard of clinical excellence and patient safety in every service we provide.</p>
+                    </div>
+
                 </div>
             </div>
 
+            <!-- TRUST -->
             <div class="col-lg-4 col-md-6">
                 <div class="why-card">
-                    <h3>Trust</h3>
-                    <p>We believe in transparent communication and build lasting trust with patients, families, and the community.</p>
+
+                    <div class="lang-content ta">
+                        <h3>நம்பிக்கை (Trust)</h3>
+                        <p>நாங்கள் வெளிப்படையான தொடர்பு முறையை நம்புகிறோம்; மேலும், நோயாளிகள், பணியாளர்கள் மற்றும் நாம் சேவை வழங்கும் சமூகத்தினரிடையே நம்பிக்கையை வளர்த்தெடுக்கிறோம்.</p>
+                    </div>
+
+                    <div class="lang-content en" style="display:none;">
+                        <h3>Trust</h3>
+                        <p>We believe in transparent communication and build lasting trust with patients, families, and the community.</p>
+                    </div>
+
                 </div>
             </div>
 
+            <!-- RESPECT -->
             <div class="col-lg-4 col-md-6">
                 <div class="why-card">
-                    <h3>Respect</h3>
-                    <p>We honor the dignity, individuality, and rights of every patient and healthcare professional.</p>
+
+                    <div class="lang-content ta">
+                        <h3>மரியாதை (Respect)</h3>
+                        <p>ஒவ்வொரு நோயாளி மற்றும் ஊழியர்களின் கண்ணியம், தனித்துவம் மற்றும் உரிமைகளை நாங்கள் மதிக்கிறோம்.</p>
+                    </div>
+
+                    <div class="lang-content en" style="display:none;">
+                        <h3>Respect</h3>
+                        <p>We honor the dignity, individuality, and rights of every patient and healthcare professional.</p>
+                    </div>
+
                 </div>
             </div>
 
+            <!-- EMPATHY -->
             <div class="col-lg-4 col-md-6">
                 <div class="why-card">
-                    <h3>Empathy</h3>
-                    <p>We treat each patient with compassion and understanding, addressing both physical and emotional needs.</p>
+
+                    <div class="lang-content ta">
+                        <h3>கருணை (Empathy)</h3>
+                        <p>ஒவ்வொரு நோயாளியையும் இரக்கத்துடனும் புரிதலுடனும் நடத்துகிறோம், அவர்களின் உடல் மற்றும் உணர்ச்சித் தேவைகளை உணர்ந்துகொள்கிறோம்.</p>
+                    </div>
+
+                    <div class="lang-content en" style="display:none;">
+                        <h3>Empathy</h3>
+                        <p>We treat each patient with compassion and understanding, addressing both physical and emotional needs.</p>
+                    </div>
+
                 </div>
             </div>
 
+            <!-- RESPONSIBILITY -->
             <div class="col-lg-4 col-md-6">
                 <div class="why-card">
-                    <h3>Responsibility</h3>
-                    <p>We uphold personal and professional accountability in every aspect of our healthcare services.</p>
+
+                    <div class="lang-content ta">
+                        <h3>பொறுப்பு (Responsibility)</h3>
+                        <p>எங்கள் பணியின் ஒவ்வொரு அம்சத்திலும் தனிப்பட்ட மற்றும் தொழில்முறை பொறுப்புணர்வை நாங்கள் நிலைநிறுத்துகிறோம்.</p>
+                    </div>
+
+                    <div class="lang-content en" style="display:none;">
+                        <h3>Responsibility</h3>
+                        <p>We uphold personal and professional accountability in every aspect of our healthcare services.</p>
+                    </div>
+
                 </div>
             </div>
 
+            <!-- SERVICE EXCELLENCE -->
             <div class="col-lg-4 col-md-6">
                 <div class="why-card">
-                    <h3>Service Excellence</h3>
-                    <p>We are committed to exceeding expectations through continuous improvement and patient-centered care.</p>
+
+                    <div class="lang-content ta">
+                        <h3>சிறந்த சேவை (Service Excellence)</h3>
+                        <p>தொடர்ச்சியான முன்னேற்றம் மற்றும் நோயாளியை மையமாகக் கொண்ட பராமரிப்பு மூலம் நோயாளிகன் எதிர்பார்ப்புகளை முழுமையாக நிறைவு செய்ய</p>
+                    </div>
+
+                    <div class="lang-content en" style="display:none;">
+                        <h3>Service Excellence</h3>
+                        <p>We are committed to exceeding expectations through continuous improvement and patient-centered care.</p>
+                    </div>
+
                 </div>
             </div>
 
@@ -432,7 +685,7 @@
 
             <div class="col-lg-4 col-md-6">
                 <div class="speciality-card">
-                    <h5>தி காது, மூக்கு, தொண்டை பிரிவு</h5>
+                    <h5>காது, மூக்கு, தொண்டை பிரிவு</h5>
                     <p>(ENT)</p>
                 </div>
             </div>
@@ -774,7 +1027,7 @@ all facilities at one place</p>
             <!-- Dr Vijayakumar -->
             <div class="doctors-list-card">
                 <a href="dr-r-vijayakumar.html">
-                    <img src="assets/img/doctors/Dr.jpg" alt="Dr R Vijayakumar">
+                    <img src="assets/img/doctors/Dr Vijayakumar.jpg" alt="Dr R Vijayakumar">
                 </a>
                 <div class="caption">
                     <div class="c-text">
@@ -801,6 +1054,22 @@ all facilities at one place</p>
                             </a>
                         </h3>
                         <p>Consultant – Obstetrics and Gynaecology / Infertility</p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="doctors-list-card">
+                <a href="Dr . BALAJI.html">
+                    <img src="assets/img/doctors/Dr.jpg" alt="Dr Balaji">
+                </a>
+                <div class="caption">
+                    <div class="c-text">
+                        <h3>
+                            <a href="Dr . BALAJI.html">
+                                Dr. BALAJI
+                            </a>
+                        </h3>
+                        <p>Consultant – Cardiology</p>
                     </div>
                 </div>
             </div>
@@ -941,6 +1210,38 @@ all facilities at one place</p>
     });
   });
 </script>
+<script>
+function switchLanguage(lang) {
+
+    document.querySelectorAll('.lang-content').forEach(function(el) {
+        el.style.display = 'none';
+    });
+
+    document.querySelectorAll('.' + lang).forEach(function(el) {
+        el.style.display = 'block';
+    });
+
+    document.querySelectorAll('.lang-pill').forEach(function(btn) {
+        btn.classList.remove('active');
+    });
+
+    document.querySelectorAll('.lang-pill[onclick*="' + lang + '"]').forEach(function(btn) {
+        btn.classList.add('active');
+    });
+
+    localStorage.setItem("selectedLanguage", lang);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    var savedLang = localStorage.getItem("selectedLanguage") || "ta";
+    setTimeout(function() {
+        switchLanguage(savedLang);
+    }, 200);
+});
+</script>
+
+
+
     </body>
 
 </html>

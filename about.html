@@ -1,27 +1,83 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="ta">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/boxicons.min.css">
-    <link rel="stylesheet" href="assets/css/meanmenu.min.css">
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
-    <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/theme-dark.css">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
 
-    <title>Sugajeevan Hospital</title>
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+<title>Sugajeevan Hospital</title>
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
 
-    <style>
- .about-full-text {
+<style>
+
+/* =========================
+   BANNER FIX (Clickable)
+========================= */
+
+.page-banner-area {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.page-banner-area::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,40,60,0.55);
+    z-index: 1;
+    pointer-events: none; /* 🔥 Important */
+}
+
+.page-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+}
+
+/* =========================
+   LANGUAGE BUTTON STYLE
+========================= */
+
+.language-switch {
+    margin-top: 20px;
+}
+
+.lang-btn {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(6px);
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 8px 22px;
+    margin: 0 6px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background: #0c90b2;
+    border-color: #0c90b2;
+    color: #fff;
+}
+
+.lang-btn.active {
+    background: #0c90b2;
+    border-color: #0c90b2;
+    color: #ffffff;
+}
+
+/* =========================
+   ABOUT TEXT
+========================= */
+
+.about-full-text {
     text-align: justify;
     line-height: 1.9;
 }
@@ -31,13 +87,6 @@
     margin-bottom: 15px;
     color: #0c90b2;
     font-weight: 600;
-}
-
-.about-image-side img {
-    width: 85%;
-    max-width: 500px;
-    border-radius: 12px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
 }
 
 .highlight-line {
@@ -66,160 +115,252 @@
     font-weight: bold;
 }
 
-@media (max-width: 991px) {
-    .about-image-side {
-        margin-top: 30px;
-    }
-}
-
-    </style>
+</style>
 </head>
 
 <body>
 
 <header id="header1"></header>
 
-<!-- Page Banner Area -->
+<!-- =========================
+     BANNER
+========================= -->
 <div class="page-banner-area bg-1">
     <div class="d-table">
         <div class="d-table-cell">
             <div class="container">
                 <div class="page-content">
-                    <h2>About Us</h2>
+
+                    <div class="lang-content ta">
+                        <h2>எங்களை பற்றி</h2>
+                    </div>
+
+                    <div class="lang-content en" style="display:none;">
+                        <h2>About Us</h2>
+                    </div>
+
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li>About Us</li>
                     </ul>
+
+                    <div class="language-switch">
+                        <button class="lang-btn active"
+                                onclick="switchLanguage('ta', this)">
+                                தமிழ்
+                        </button>
+
+                        <button class="lang-btn"
+                                onclick="switchLanguage('en', this)">
+                                English
+                        </button>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- About Area -->
+<!-- =========================
+     ABOUT SECTION
+========================= -->
+
 <div class="about-area ptb-100">
-    <div class="container">
+<div class="container">
 
-        <div class="section-title-two text-center">
-            <span>About Us</span>
-            <h2>Sugajeevan Multispeciality Hospital</h2>
-        </div>
+<div class="row">
 
-      <div class="row mt-5">
+<div class="col-lg-12 about-full-text">
+
+<!-- Tamil (Default) -->
+<div class="lang-content ta">
+
+<h4>சுகஜீவன் மல்டி ஸ்பெஷாலிட்டி மருத்துவமனை – ஒரு பார்வை</h4>
+
+<p>
+“அன்பும் திறமையும் இணைந்த சிகிச்சை” என்பது எங்கள் வழிகாட்டும் கொள்கை.
+மேலவஸ்தச்சாவடி, தஞ்சாவூரில் அமைந்துள்ள எங்கள் 100 படுக்கைகள் கொண்ட மருத்துவமனை, உலகத் தரம் வாய்ந்த மருத்துவ சேவையை மக்களுக்கு எட்டும் தூரத்தில் வழங்குகிறது.
+</p>
+
+<p>
+24×7 நேரமும் செயல்படும் எங்கள் மருத்துவமனை, நவீன உள்கட்டமைப்பு, மேம்பட்ட மருத்துவ உபகரணங்கள் மற்றும் தகுதியான மருத்துவ, செவிலியர் மற்றும் தொழில்நுட்ப பணியாளர்களுடன் செயல்படுகிறது.
+ஒவ்வொரு நோயாளிக்கும் உயர்தர சிகிச்சை மற்றும் பராமரிப்பு வழங்குவதே எங்கள் நோக்கம்.
+</p>
+
+<h4>நோயாளர் தங்கும் வசதிகள்</h4>
+
+<p>
+எங்கள் மருத்துவமனையில் நோயாளிகளின் தேவைக்கேற்ப பின்வரும் வசதிகள் உள்ளன:
+</p>
+
+<ul class="values-list">
+<li>தீவிர சிகிச்சைப் பிரிவு (ICU)</li>
+<li>பிரசவ அறை</li>
+<li>பொது வார்டு</li>
+<li>பகிர்ந்து பயன்படும் குளிரூட்டப்பட்ட அறைகள்</li>
+<li>தனி நபர் குளிரூட்டப்பட்ட அறைகள்</li>
+<li>குளிரூட்டப்பட்ட வசதிமிக்க அறைகள் (Suite Rooms)</li>
+</ul>
+
+<p>
+ஒவ்வொரு பிரிவிலும் ஆக்சிஜன் வசதி, சக்‌ஷன் பாயிண்ட், நர்ஸ் கால் சிஸ்டம், வென்டிலேட்டர் மற்றும் மானிட்டர் இணைப்பு வசதிகள் உள்ளன.
+</p>
+
+<h4>எங்கள் நோக்கம் (Vision)</h4>
+
+<p class="highlight-line">
+சமூகத்தின் முழுமையான சுகாதார தேவைகளை கருணை, அர்ப்பணிப்பு மற்றும் திறமையுடன் பூர்த்தி செய்து, நோயாளிகள் மற்றும் குடும்பங்கள் தேர்வு செய்யும் முதன்மை மருத்துவமனையாக உருவாகுதல்.
+</p>
+
+<h4>எங்கள் குறிக்கோள் (Mission)</h4>
+
+<p class="highlight-line">
+உயர்தர பாதுகாப்பான சிகிச்சையை, மனிதாபிமானத்துடன் மற்றும் நேர்மையுடன் வழங்குதல். மேம்பட்ட மருத்துவ தொழில்நுட்பம் மற்றும் அர்ப்பணிப்புடன் செயல்படும் மருத்துவக் குழுவின் மூலம் சிறந்த சுகாதார சேவையை வழங்குவதே எங்கள் பணி.
+</p>
+
+<h4>எங்கள் நெறிமுறைகள்</h4>
+
+<ul class="values-list">
+<li><strong>தரம் (Quality):</strong> எங்கள் அனைத்து சேவைகளிலும் மிக உயர்ந்த தரமான மருத்துவ சிறப்பையும் நோயாளி பாதுகாப்பையும் வழங்க நாங்கள் பாடுபடுகிறோம்.</li>
+<li><strong>நம்பிக்கை (Trust):</strong> நாங்கள் வெளிப்படையான தொடர்பு முறையை நம்புகிறோம்; மேலும், நோயாளிகள், பணியாளர்கள் மற்றும் நாம் சேவை வழங்கும் சமூகத்தினரிடையே நம்பிக்கையை வளர்த்தெடுக்கிறோம்.</li>
+<li><strong>மரியாதை (Respect):</strong> ஒவ்வொரு நோயாளி மற்றும் ஊழியர்களின் கண்ணியம், தனித்துவம் மற்றும் உரிமைகளை நாங்கள் மதிக்கிறோம்.</li>
+<li><strong>கருணை (Empathy):</strong> ஒவ்வொரு நோயாளியையும் இரக்கத்துடனும் புரிதலுடனும் நடத்துகிறோம், அவர்களின் உடல் மற்றும் உணர்ச்சித் தேவைகளை உணர்ந்துகொள்கிறோம்.</li>
+<li><strong>பொறுப்பு (Responsibility):</strong> எங்கள் பணியின் ஒவ்வொரு அம்சத்திலும் தனிப்பட்ட மற்றும் தொழில்முறை பொறுப்புணர்வை நாங்கள் நிலைநிறுத்துகிறோம்.</li>
+<li><strong>சிறந்த சேவை (Service Excellence):</strong> தொடர்ச்சியான முன்னேற்றம் மற்றும் நோயாளியை மையமாகக் கொண்ட பராமரிப்பு மூலம் நோயாளிகன் எதிர்பார்ப்புகளை முழுமையாக நிறைவு செய்ய நாங்கள் உறுதிபூண்டுள்ளோம்.</li>
+</ul>
+
+</div>
 
 
-            <!-- LEFT TEXT -->
-            <div class="col-lg-6">
-                <div class="about-full-text">
 
-                    <p>
-                        At Sugajeevan Multispeciality Hospital, we are driven by one guiding principle —
-                        “Healing with Compassion and Excellence.” Located at Melavasthachavadi, Thanjavur,
-                        our 100-bedded facility ensures that world-class medical care is always within your reach.
-                    </p>
+<!-- English -->
+<div class="lang-content en" style="display:none;">
 
-                    <p>
-                        We are committed to delivering comprehensive, patient-focused healthcare through a strong
-                        culture of teamwork among our medical and non-medical professionals.
-                    </p>
+<h4>Sugajeevan Multispeciality Hospital</h4>
 
-                    <p>
-                        Our hospital operates 24×7, providing advanced diagnostic and therapeutic services supported
-                        by state-of-the-art infrastructure, modern technology, and highly qualified, dedicated staff.
-                    </p>
+<p>
+At Sugajeevan Multispeciality Hospital, we are driven by one guiding principle —
+“Healing with Compassion and Excellence.” Located at Melavasthachavadi, Thanjavur,
+our 100-bedded facility ensures that world-class medical care is always within your reach.
+</p>
 
-                    <p>
-                        Our goal is to combine medical expertise with empathy, ensuring every patient receives the
-                        highest standards of treatment, comfort, and care.
-                    </p>
+<p>
+We are committed to delivering comprehensive, patient-focused healthcare through a strong
+culture of teamwork among our medical and non-medical professionals.
+</p>
 
-                </div>
-            </div>
+<p>
+Our hospital operates 24×7, providing advanced diagnostic and therapeutic services supported
+by state-of-the-art infrastructure, modern technology, and highly qualified, dedicated staff.
+</p>
 
-            <!-- RIGHT IMAGE -->
-            <div class="col-lg-6 text-center">
-                <div class="about-image-side">
-                    <img src="assets/img/gallery/gallery-1.jpg"
-                         alt="Sugajeevan Hospital"
-                         class="img-fluid">
-                </div>
-            </div>
+<p>
+Our goal is to combine medical expertise with empathy, ensuring every patient receives the
+highest standards of treatment, comfort, and care.
+</p>
 
-        </div>
+<h4>Patient Accommodation & Facilities</h4>
 
-        <!-- Remaining Content Full Width -->
-        <div class="about-full-text mt-5">
+<p>
+At Sugajeevan Multispeciality Hospital, we provide well-designed and sophisticated patient
+accommodations to suit the needs and comfort of every individual.
+</p>
 
-            <h4>Patient Accommodation & Facilities</h4>
+<p>
+Our facilities include Intensive Care Units, Labour Ward, General Ward,
+Sharing AC Rooms, Single AC Rooms, and AC Suite Rooms — each equipped with
+essential healthcare amenities such as oxygen supply, suction points, nurse call system,
+and electrical provisions for ventilators, monitors, and pulse oximeters.
+</p>
 
-            <p>
-                At Sugajeevan Multispeciality Hospital, we provide well-designed and sophisticated patient
-                accommodations to suit the needs and comfort of every individual.
-            </p>
+<p>
+Every unit is thoughtfully designed to ensure patient safety, hygiene, and convenience,
+supported by dedicated and trained medical and nursing staff available round-the-clock.
+</p>
 
-            <p>
-                Our facilities include Intensive Care Units, Labour Ward, General Ward,
-                Sharing AC Rooms, Single AC Rooms, and AC Suite Rooms — each equipped with
-                essential healthcare amenities such as oxygen supply, suction points, nurse call system,
-                and electrical provisions for ventilators, monitors, and pulse oximeters.
-            </p>
+<h4>Vision of Sugajeevan</h4>
 
-            <p>
-                Every unit is thoughtfully designed to ensure patient safety, hygiene, and convenience,
-                supported by dedicated and trained medical and nursing staff available round-the-clock.
-            </p>
+<p class="highlight-line">
+To be the hospital of choice for patients and families by meeting the comprehensive
+healthcare needs of the community with compassion, commitment, and excellence.
+</p>
 
-            <h4>Vision of Sugajeevan</h4>
-            <p class="highlight-line">
-                To be the hospital of choice for patients and families by meeting the comprehensive
-                healthcare needs of the community with compassion, commitment, and excellence.
-            </p>
+<h4>Mission Statement of Sugajeevan</h4>
 
-            <h4>Mission Statement of Sugajeevan</h4>
-            <p class="highlight-line">
-                To provide quality patient care with utmost safety, compassion, and integrity,
-                supported by advanced medical technology and a team of dedicated healthcare professionals —
-                ensuring that every patient receives the very best in healthcare services.
-            </p>
+<p class="highlight-line">
+To provide quality patient care with utmost safety, compassion, and integrity,
+supported by advanced medical technology and a team of dedicated healthcare professionals —
+ensuring that every patient receives the very best in healthcare services.
+</p>
 
-            <h4>Sugajeevan Values</h4>
+<h4>Sugajeevan Values</h4>
 
-            <ul class="values-list">
-                <li><strong>Quality:</strong> We strive to deliver the highest standard of clinical excellence and patient safety in all our services.</li>
-                <li><strong>Trust:</strong> We believe in transparent communication and foster trust between patients, staff, and the community we serve.</li>
-                <li><strong>Respect:</strong> We honor the dignity, individuality, and rights of every patient and staff member.</li>
-                <li><strong>Empathy:</strong> We treat each patient with compassion and understanding, recognizing their physical and emotional needs.</li>
-                <li><strong>Responsibility:</strong> We uphold personal and professional accountability in every aspect of our work.</li>
-                <li><strong>Service Excellence:</strong> We are committed to exceeding expectations through continuous improvement and patient-centered care.</li>
-            </ul>
+<ul class="values-list">
+<li><strong>Quality:</strong> We strive to deliver the highest standard of clinical excellence and patient safety in all our services.</li>
+<li><strong>Trust:</strong> We believe in transparent communication and foster trust between patients, staff, and the community we serve.</li>
+<li><strong>Respect:</strong> We honor the dignity, individuality, and rights of every patient and staff member.</li>
+<li><strong>Empathy:</strong> We treat each patient with compassion and understanding, recognizing their physical and emotional needs.</li>
+<li><strong>Responsibility:</strong> We uphold personal and professional accountability in every aspect of our work.</li>
+<li><strong>Service Excellence:</strong> We are committed to exceeding expectations through continuous improvement and patient-centered care.</li>
+</ul>
 
-        </div>
+</div>
 
-    </div>
+
+
+</div>
+
+</div>
+
+</div>
 </div>
 
 <footer id="footer1"></footer>
 
-<!-- Scripts -->
+<!-- =========================
+     SCRIPTS
+========================= -->
+
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/meanmenu.min.js"></script>
-<script src="assets/js/custom.js"></script>
 
 <script>
+
+/* Language Switch Function */
+
+function switchLanguage(lang, element) {
+
+    document.querySelectorAll('.lang-content').forEach(function(el) {
+        el.style.display = 'none';
+    });
+
+    document.querySelectorAll('.' + lang).forEach(function(el) {
+        el.style.display = 'block';
+    });
+
+    document.querySelectorAll('.lang-btn').forEach(function(btn) {
+        btn.classList.remove('active');
+    });
+
+    element.classList.add('active');
+}
+
+/* Header & Footer Load */
+
 fetch("header.html")
-.then(response => response.text())
+.then(res => res.text())
 .then(data => {
     document.getElementById("header1").innerHTML = data;
 });
 
 fetch("footer.html")
-.then(response => response.text())
+.then(res => res.text())
 .then(data => {
     document.getElementById("footer1").innerHTML = data;
 });
+
 </script>
 
 </body>
-
 </html>
