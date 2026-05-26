@@ -1,174 +1,380 @@
 <!DOCTYPE html>
-<html lang="zxx">
-    
+<html lang="ta">
 <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-       <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <!-- BoxIcon Css -->
-        <link rel="stylesheet" href="assets/css/boxicons.min.css">
-        <!-- MeanMenu CSS -->
-        <link rel="stylesheet" href="assets/css/meanmenu.min.css">
-        <!-- Nice Select CSS -->
-        <link rel="stylesheet" href="assets/css/nice-select.css">
-        <!-- Animate CSS -->
-        <link rel="stylesheet" href="assets/css/animate.min.css">
-        <!-- Owl Carousel CSS -->
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-        <!-- Owl Theme CSS -->
-        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-        <!-- Magnific CSS -->
-        <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
-        <!-- Jquery DateTimePicker CSS -->
-        <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css" />
-        <!-- StyleSheet CSS -->
-        <link rel="stylesheet" href="assets/css/style.css">
-        <!-- Responsive CSS -->
-        <link rel="stylesheet" href="assets/css/responsive.css">
-        <!-- Theme Dark CSS -->
-        <link rel="stylesheet" href="assets/css/theme-dark.css">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
 
-        <!--=== Title ===-->
-        <title>Sugajeevan Hospital</title>
-        <link rel="icon" type="image/png" href="assets/img/favicon.png">
-    </head>
-    
-    <body>
-        <!-- Preloader Area -->
-        <div class="preloader">
+<title>Privacy Policy – Sugajeevan Hospital</title>
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+<script src="assets/js/jquery.min.js"></script>
+
+<style>
+
+/* =========================
+   BANNER FIX (Clickable)
+========================= */
+
+.page-banner-area {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.page-banner-area::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,40,60,0.55);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.page-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+}
+
+/* =========================
+   LANGUAGE BUTTON STYLE
+========================= */
+
+.language-switch {
+    margin-top: 20px;
+}
+
+.lang-btn {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(6px);
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 8px 22px;
+    margin: 0 6px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background: #0c90b2;
+    border-color: #0c90b2;
+    color: #fff;
+}
+
+.lang-btn.active {
+    background: #0c90b2;
+    border-color: #0c90b2;
+    color: #ffffff;
+}
+
+/* =========================
+   CONTENT TEXT
+========================= */
+
+.about-full-text {
+    text-align: justify;
+    line-height: 1.9;
+}
+
+.about-full-text h4 {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    color: #0c90b2;
+    font-weight: 600;
+}
+
+.highlight-line {
+    background: #f4f9fb;
+    padding: 15px;
+    border-left: 4px solid #0c90b2;
+    border-radius: 6px;
+}
+
+.values-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.values-list li {
+    margin-bottom: 12px;
+    padding-left: 22px;
+    position: relative;
+}
+
+.values-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #0c90b2;
+    font-weight: bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<header id="header1"></header>
+
+<!-- =========================
+     BANNER
+========================= -->
+<div class="page-banner-area bg-1">
+    <div class="d-table">
+        <div class="d-table-cell">
             <div class="container">
-                <div class="d-table">
-                    <div class="d-table-cell">
-                        <div class="preloader loading">
-                            <span class="slice"></span>
-                            <span class="slice"></span>
-                            <span class="slice"></span>
-                            <span class="slice"></span>
-                            <span class="slice"></span>
-                            <span class="slice"></span>
-                        </div>
+                <div class="page-content">
+
+                    <div class="lang-content ta">
+                        <h2>தனியுரிமைக் கொள்கை</h2>
                     </div>
+
+                    <div class="lang-content en" style="display:none;">
+                        <h2>Privacy Policy</h2>
+                    </div>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li>Privacy Policy</li>
+                    </ul>
+
+                    <div class="language-switch">
+                        <button class="lang-btn active"
+                                onclick="switchLanguage('ta', this)">
+                                தமிழ்
+                        </button>
+                        <button class="lang-btn"
+                                onclick="switchLanguage('en', this)">
+                                English
+                        </button>
+                    </div>
+
                 </div>
             </div>
         </div>
-        <!-- End Preloader Area -->
+    </div>
+</div>
 
-        <!-- Start Navbar Area -->
-              <header id="header1"></header>
+<!-- =========================
+     CONTENT SECTION
+========================= -->
 
-        <!-- End Navbar Area -->
+<div class="about-area ptb-100">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 about-full-text">
 
-        <!-- Page Banner Area -->
-        <div class="page-banner-area bg-3">
-            <div class="d-table">
-                <div class="d-table-cell">
-                    <div class="container">
-                        <div class="page-content">
-                            <h2>Privacy Policy</h2>
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li>Privacy Policy</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Page Banner Area -->
+<!-- ===== TAMIL ===== -->
+<div class="lang-content ta">
 
-        <!-- Privacy PolicyArea -->
-        <div class="terms-condition ptb-100">
-            <div class="container">
-                <h3>Introduction</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p class="highlight-line">
+கடைசியாக புதுப்பிக்கப்பட்டது: ஜனவரி 2025
+</p>
 
-                <h3>Why do we use it</h3>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose</p>
+<p>
+சுகஜீவன் மல்டி ஸ்பெஷாலிட்டி மருத்துவமனை உங்கள் தனியுரிமையை மிகவும் மதிக்கிறது. இந்தக் கொள்கையானது நாங்கள் எந்த வகையான தகவல்களை சேகரிக்கிறோம், எவ்வாறு பயன்படுத்துகிறோம், மற்றும் எவ்வாறு பாதுகாக்கிறோம் என்பதை விளக்குகிறது.
+</p>
 
+<h4>1. சேகரிக்கப்படும் தகவல்கள்</h4>
+<p>
+நாங்கள் பின்வரும் வகையான தகவல்களை சேகரிக்கலாம்:
+</p>
+<ul class="values-list">
+    <li><strong>தனிப்பட்ட அடையாள தகவல்:</strong> பெயர், முகவரி, மின்னஞ்சல் முகவரி, தொலைபேசி எண்.</li>
+    <li><strong>மருத்துவ தகவல்:</strong> நியமன விவரங்கள், மருத்துவ வரலாறு மற்றும் சிகிச்சை தொடர்பான தகவல்கள்.</li>
+    <li><strong>இணையதள பயன்பாட்டு தகவல்:</strong> IP முகவரி, உலாவி வகை, பார்வையிட்ட பக்கங்கள் மற்றும் பார்வை நேரம்.</li>
+</ul>
 
-                <h3>Where does it come from</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+<h4>2. தகவல் பயன்பாடு</h4>
+<p>
+சேகரிக்கப்பட்ட தகவல்கள் பின்வரும் நோக்கங்களுக்காக பயன்படுத்தப்படும்:
+</p>
+<ul class="values-list">
+    <li>மருத்துவ நியமனங்கள் மற்றும் சிகிச்சை ஏற்பாடுகள்.</li>
+    <li>நோயாளிகளுக்கு சேவை தொடர்பான தகவல்களை அனுப்புதல்.</li>
+    <li>மருத்துவமனை சேவைகளை மேம்படுத்துதல்.</li>
+    <li>சட்டப்பூர்வ அல்லது ஒழுங்குமுறைத் தேவைகளை பூர்த்தி செய்தல்.</li>
+</ul>
 
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+<h4>3. தகவல் பகிர்வு</h4>
+<p>
+உங்கள் தனிப்பட்ட தகவல்களை நாங்கள் மூன்றாம் தரப்பினருக்கு விற்பனை செய்வதில்லை, வாடகைக்கு கொடுப்பதில்லை அல்லது வர்த்தக நோக்கங்களுக்காக பகிர்வதில்லை. பின்வரும் சந்தர்ப்பங்களில் மட்டுமே தகவல்கள் பகிரப்படலாம்:
+</p>
+<ul class="values-list">
+    <li>உங்கள் சிகிச்சையில் ஈடுபட்டுள்ள மருத்துவர்கள் மற்றும் சுகாதார நிபுணர்களுடன்.</li>
+    <li>சட்ட அமலாக்க அதிகாரிகளின் கோரிக்கைக்கிணங்க.</li>
+    <li>நீங்கள் வெளிப்படையாக சம்மதம் அளித்த சந்தர்ப்பங்களில்.</li>
+</ul>
 
-                <h3>Where can I get some</h3>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet</p>
+<h4>4. குக்கீஸ் மற்றும் தொழில்நுட்ப கருவிகள்</h4>
+<p>
+எங்கள் இணையதளம் பயனர் அனுபவத்தை மேம்படுத்துவதற்காக குக்கீஸ் பயன்படுத்தலாம். உங்கள் உலாவி அமைப்புகளில் குக்கீஸை முடக்கலாம், இருப்பினும் இது சில வசதிகளை பாதிக்கலாம்.
+</p>
 
-                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great.</p>
- 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<h4>5. தரவு பாதுகாப்பு</h4>
+<p>
+உங்கள் தனிப்பட்ட மற்றும் மருத்துவ தகவல்களை பாதுகாக்க நாங்கள் தொழில்நுட்ப மற்றும் நிர்வாக நடவடிக்கைகளை கையாள்கிறோம். அங்கீகாரமற்ற அணுகல், மாற்றம் அல்லது தரவு திருடல் தடுக்க தகுந்த நடவடிக்கைகள் எடுக்கப்படுகின்றன.
+</p>
 
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
- 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<h4>6. சிறுவர்களின் தனியுரிமை</h4>
+<p>
+எங்கள் இணையதளம் 18 வயதிற்கு கீழுள்ள சிறுவர்களிடமிருந்து நேரடியாக தனிப்பட்ட தகவல்களை சேகரிக்கவில்லை. சிறுவர்களுக்கான மருத்துவ சேவைகள் பெற்றோர் அல்லது பாதுகாவலரின் ஒப்புதலுடன் மேற்கொள்ளப்படுகின்றன.
+</p>
 
-                <p>This is the way you can easily make the search of the best doctor and this is the first step for our work. Then you will get the desire doctor and take the treatment in an easiest and cheapest way & effectively. This is one of the best and this will give you the good support. We can be able to make a good image to the global. We have a good image on the local & the international market for your good and reasonable price range on the.</p>
-            </div>
-        </div>
-        <!-- End Privacy Policy Area -->
-        
-         <!-- Footer Area-->
-               <footer id="footer1"></footer>
+<h4>7. உங்கள் உரிமைகள்</h4>
+<p>
+உங்கள் தனிப்பட்ட தகவல்களை அணுக, திருத்த அல்லது நீக்க கோர உரிமை உங்களுக்கு உண்டு. இதற்காக மருத்துவமனையை நேரடியாக தொடர்பு கொள்ளலாம்.
+</p>
 
-        <!-- End Footer Bottom Area -->
+<h4>8. கொள்கை மாற்றங்கள்</h4>
+<p>
+இந்தத் தனியுரிமைக் கொள்கையை எந்த நேரத்திலும் புதுப்பிக்கும் உரிமை சுகஜீவன் மருத்துவமனைக்கு உள்ளது. மாற்றங்கள் இந்தப் பக்கத்தில் வெளியிடப்படும்.
+</p>
 
-        <!-- Go Top -->
-        <div class="go-top">
-            <i class='bx bxs-upvote'></i>
-        </div>
-        <!-- End Go Top -->
+<h4>9. தொடர்பு கொள்ள</h4>
+<p>
+தனியுரிமைக் கொள்கை தொடர்பான கேள்விகளுக்கு:
+</p>
+<p class="highlight-line">
+    சுகஜீவன் மல்டி ஸ்பெஷாலிட்டி மருத்துவமனை<br>
+    எண். 167/51, 52, பாப்பம்மாள் பன்னீர்செல்வம் நகர், நாகப்பட்டினம் பைபாஸ் ரோடு,<br>
+    மேலவஸ்தச்சாவடி, தஞ்சாவூர்.<br>
+    தொலைபேசி: 04362 227601 / 227602<br>
+    மின்னஞ்சல்: sjshinfo@sugajeevanhospital.com
+</p>
 
-        <!-- jQuery first, then Bootstrap JS -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <!-- Magnific -->
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
-        <!-- MeanMenu JS -->
-        <script src="assets/js/meanmenu.min.js"></script>
-        <!-- Nice Select JS -->
-        <script src="assets/js/jquery.nice-select.min.js"></script>
-        <!-- Owl Carousel JS -->
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <!-- Jquery Mixitup JS -->
-        <script src="assets/js/jquery.mixitup.min.js"></script>
-        <!-- Jquery DateTimePicker JS -->
-        <script src="assets/js/jquery.datetimepicker.full.min.js"></script> 
-        <!-- Form Validator JS -->
-        <script src="assets/js/form-validator.min.js"></script>
-        <!-- Contact JS -->
-        <script src="assets/js/contact-form-script.js"></script>
-        <!-- AjaxChimp JS -->
-        <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-        <!-- Custom JS -->
-        <script src="assets/js/custom.js"></script>
-          <script>
-                function initMenus() {
-                    // Re-init MeanMenu AFTER header is injected
-                    if (typeof jQuery !== "undefined" && typeof jQuery.fn.meanmenu !== "undefined") {
-                        jQuery('.mean-menu').meanmenu({
-                            meanScreenWidth: "1021" // use same value as your theme
-                        });
-                    }
-                }
+</div>
 
-                // Load header
-                fetch("header.html")
-                    .then(response => response.text())
-                    .then(data => {
-                        document.getElementById("header1").innerHTML = data;
-                        initMenus(); // important: call after inserting header HTML
-                    });
+<!-- ===== ENGLISH ===== -->
+<div class="lang-content en" style="display:none;">
 
-                // Load footer
-                fetch("footer.html")
-                    .then(response => response.text())
-                    .then(data => {
-                        document.getElementById("footer1").innerHTML = data;
-                    });
-        </script>
-    </body>
+<p class="highlight-line">
+Last Updated: January 2025
+</p>
 
+<p>
+Sugajeevan Multispeciality Hospital is committed to protecting your privacy. This Privacy Policy explains what information we collect, how we use it, and how we safeguard it when you interact with our hospital and website.
+</p>
+
+<h4>1. Information We Collect</h4>
+<p>
+We may collect the following categories of information:
+</p>
+<ul class="values-list">
+    <li><strong>Personal Identification Information:</strong> Name, address, email address, and phone number.</li>
+    <li><strong>Medical Information:</strong> Appointment details, medical history, and treatment-related information provided during consultation or admission.</li>
+    <li><strong>Website Usage Data:</strong> IP address, browser type, pages visited, and time of access for analytical purposes.</li>
+</ul>
+
+<h4>2. How We Use Your Information</h4>
+<p>
+The information we collect is used for the following purposes:
+</p>
+<ul class="values-list">
+    <li>Scheduling and managing medical appointments and treatments.</li>
+    <li>Communicating service-related updates and appointment reminders.</li>
+    <li>Improving the quality of our hospital services and patient experience.</li>
+    <li>Fulfilling legal, regulatory, or compliance requirements.</li>
+</ul>
+
+<h4>3. Information Sharing</h4>
+<p>
+We do not sell, rent, or share your personal information with third parties for commercial purposes. Information may only be shared in the following circumstances:
+</p>
+<ul class="values-list">
+    <li>With doctors and healthcare professionals directly involved in your treatment.</li>
+    <li>In response to lawful requests from regulatory or law enforcement authorities.</li>
+    <li>When you have provided explicit consent for a specific purpose.</li>
+</ul>
+
+<h4>4. Cookies &amp; Tracking Technologies</h4>
+<p>
+Our website may use cookies to enhance your browsing experience and analyze website traffic. You may disable cookies through your browser settings; however, doing so may affect the functionality of certain features on our website.
+</p>
+
+<h4>5. Data Security</h4>
+<p>
+We implement appropriate technical and administrative safeguards to protect your personal and medical information from unauthorized access, alteration, disclosure, or destruction. Our staff are trained to handle patient data with the highest level of confidentiality.
+</p>
+
+<h4>6. Children's Privacy</h4>
+<p>
+Our website does not knowingly collect personal information directly from individuals under the age of 18. Medical services for minors are provided with the consent of a parent or legal guardian.
+</p>
+
+<h4>7. Your Rights</h4>
+<p>
+You have the right to access, correct, or request the deletion of your personal information held by us. To exercise these rights, please contact the hospital directly using the details below.
+</p>
+
+<h4>8. Policy Updates</h4>
+<p>
+Sugajeevan Multispeciality Hospital reserves the right to update this Privacy Policy at any time. Any changes will be published on this page, and we encourage you to review it periodically.
+</p>
+
+<h4>9. Contact Us</h4>
+<p>
+For any questions or concerns regarding this Privacy Policy, please contact us at:
+</p>
+<p class="highlight-line">
+    Sugajeevan Multispeciality Hospital<br>
+    No. 167/51, 52, Pappammal Paneerselvam Nagar, Nagapattinam By-Pass Road,<br>
+    Melavasthachavadi, Thanjavur.<br>
+    Phone: 04362 227601 / 227602<br>
+    Email: sjshinfo@sugajeevanhospital.com
+</p>
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer1"></footer>
+
+<!-- =========================
+     SCRIPTS
+========================= -->
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+function switchLanguage(lang, element) {
+    document.querySelectorAll('.lang-content').forEach(function(el) {
+        el.style.display = 'none';
+    });
+    document.querySelectorAll('.' + lang).forEach(function(el) {
+        el.style.display = 'block';
+    });
+    document.querySelectorAll('.lang-btn').forEach(function(btn) {
+        btn.classList.remove('active');
+    });
+    element.classList.add('active');
+}
+
+fetch("header.html")
+.then(res => res.text())
+.then(data => {
+    document.getElementById("header1").innerHTML = data;
+});
+
+fetch("footer.html")
+.then(res => res.text())
+.then(data => {
+    document.getElementById("footer1").innerHTML = data;
+});
+
+</script>
+
+</body>
 </html>

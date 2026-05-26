@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    
+<head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+       <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- BoxIcon Css -->
+        <link rel="stylesheet" href="assets/css/boxicons.min.css">
+        <!-- MeanMenu CSS -->
+        <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+        <!-- Nice Select CSS -->
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <!-- Owl Theme CSS -->
+        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+        <!-- Magnific CSS -->
+        <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+        <!-- Jquery DateTimePicker CSS -->
+        <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css" />
+        <!-- StyleSheet CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <!-- Theme Dark CSS -->
+        <link rel="stylesheet" href="assets/css/theme-dark.css">
+
+        <!--=== Title ===-->
+        <title>Dr. Sangavi Chinnasamy – Sugajeevan Hospital</title>
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+        <style>
+
+        /* =========================
+           DOCTOR CARD
+        ========================= */
+
+        .doctor-card {
+            display: flex;
+            gap: 32px;
+            padding: 28px;
+            border-radius: 16px;
+            background: #ffffff;
+            border: 1px solid #e6e9ef;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+            margin-bottom: 30px;
+        }
+
+        /* LEFT IMAGE */
+        .doctor-card-left {
+            flex: 0 0 240px;
+        }
+
+        .doctor-card-left img {
+            width: 240px;
+            height: 270px;
+            object-fit: cover;
+            border-radius: 14px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+        }
+
+        /* RIGHT CONTENT */
+        .doctor-card-right {
+            flex: 1;
+        }
+
+        /* DOCTOR NAME */
+        .doctor-name {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 700;
+            color: #0f172a;
+        }
+
+        /* DESIGNATION */
+        .doctor-designation {
+            margin: 4px 0 3px;
+            font-size: 15px;
+            color: #0c90b2;
+            font-weight: 600;
+        }
+
+        /* QUALIFICATION */
+        .doctor-qualification {
+            margin: 4px 0 14px;
+            font-size: 13px;
+            color: #64748b;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+
+        /* BADGES */
+        .doctor-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 14px;
+        }
+
+        .doctor-badges span {
+            background: #eaf2ff;
+            color: #0c90b2;
+            padding: 6px 12px;
+            font-size: 13px;
+            border-radius: 30px;
+            font-weight: 600;
+        }
+
+        /* SECTION */
+        .doctor-section {
+            margin-top: 18px;
+            padding-top: 14px;
+            border-top: 1px solid #eef1f6;
+        }
+
+        /* SECTION TITLE */
+        .doctor-section h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        /* LIST */
+        .doctor-section ul {
+            margin: 0;
+            padding-left: 18px;
+            color: #334155;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .doctor-section ul.two-col {
+            column-count: 2;
+            column-gap: 40px;
+        }
+
+        /* CERTIFICATIONS GRID */
+        .cert-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 4px;
+        }
+
+        .cert-badge {
+            background: #f0fdf4;
+            color: #15803d;
+            border: 1px solid #bbf7d0;
+            padding: 6px 14px;
+            font-size: 13px;
+            border-radius: 30px;
+            font-weight: 600;
+        }
+
+        /* MOBILE RESPONSIVE */
+        @media (max-width: 768px) {
+
+            .doctor-card {
+                flex-direction: column;
+                padding: 18px;
+            }
+
+            .doctor-card-left {
+                flex: auto;
+                text-align: center;
+            }
+
+            .doctor-card-left img {
+                width: 100%;
+                height: auto;
+                max-width: 260px;
+            }
+
+            .doctor-section ul.two-col {
+                column-count: 1;
+            }
+        }
+
+        </style>
+    </head>
+    
+    <body>
+        <!-- Preloader Area -->
+        <div class="preloader">
+            <div class="container">
+                <div class="d-table">
+                    <div class="d-table-cell">
+                        <div class="preloader loading">
+                            <span class="slice"></span>
+                            <span class="slice"></span>
+                            <span class="slice"></span>
+                            <span class="slice"></span>
+                            <span class="slice"></span>
+                            <span class="slice"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader Area -->
+
+        <!-- Start Navbar Area -->
+        <header id="header1"></header>
+        <!-- End Navbar Area -->
+
+        <!-- Page Banner Area -->
+        <div class="page-banner-area bg-5">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="container">
+                        <div class="page-content">
+                            <h2>Doctors Details</h2>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li>Dr. Sangavi Chinnasamy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Banner Area -->
+
+        <!-- Doctor Card -->
+        <div class="container" style="margin-top: 40px; margin-bottom: 40px;">
+
+        <div class="doctor-card">
+
+            <div class="doctor-card-left">
+                <img src="assets/img/doctors/Dr. Sangavi.jpeg" alt="Dr. Sangavi Chinnasamy">
+            </div>
+
+            <div class="doctor-card-right">
+
+                <h2 class="doctor-name">Dr. Sangavi Chinnasamy</h2>
+                <p class="doctor-designation">Consultant &amp; Clinical Lead</p>
+                <p class="doctor-qualification">
+                    MBBS &nbsp;|&nbsp; MRCEM (Membership of Royal College of Emergency Medicine, UK) &nbsp;|&nbsp; MEM (Masters in Emergency Medicine)
+                </p>
+
+                <div class="doctor-badges">
+                    <span>Emergency Medicine</span>
+                    <span>Critical Care</span>
+                </div>
+
+                <!-- Areas of Expertise -->
+                <div class="doctor-section">
+                    <h3>Areas of Expertise</h3>
+                    <ul class="two-col">
+                        <li>Airway Management</li>
+                        <li>Emergency &amp; Critical Care</li>
+                        <li>Adult &amp; Pediatric Resuscitation</li>
+                        <li>Trauma Management (Primary &amp; Secondary Survey)</li>
+                        <li>Arrhythmia &amp; Cardiac Arrest Management</li>
+                        <li>Ventilator &amp; Hemodynamic Management</li>
+                        <li>Sepsis, Stroke, ACS &amp; Toxicology Management</li>
+                        <li>Pediatric Emergency Care</li>
+                        <li>Procedural Sedation &amp; Analgesia</li>
+                        <li>ECG Interpretation in Emergencies</li>
+                        <li>Point-of-Care Ultrasound (POCUS)</li>
+                        <li>Trauma Team Leadership</li>
+                    </ul>
+                </div>
+
+                <!-- Skills -->
+                <div class="doctor-section">
+                    <h3>Skills</h3>
+                    <ul class="two-col">
+                        <li>Resuscitation (ACLS, PALS, ATLS)</li>
+                        <li>Leadership &amp; Team Management</li>
+                        <li>Clinical Governance &amp; Quality Improvement</li>
+                        <li>Risk Management &amp; Audit Processes</li>
+                        <li>Documentation &amp; Clinical Governance Awareness</li>
+                    </ul>
+                </div>
+
+                <!-- Certifications -->
+                <div class="doctor-section">
+                    <h3>Certifications &amp; Courses</h3>
+                    <div class="cert-grid">
+                        <span class="cert-badge">BLS – AHA</span>
+                        <span class="cert-badge">ACLS – AHA</span>
+                        <span class="cert-badge">ATLS</span>
+                        <span class="cert-badge">PALS</span>
+                        <span class="cert-badge">POCUS</span>
+                        <span class="cert-badge">Mechanical Ventilation</span>
+                        <span class="cert-badge">Advanced Airway</span>
+                        <span class="cert-badge">Antibiotic Master Course</span>
+                        <span class="cert-badge">Infection Control &amp; Hand Hygiene Training</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+        <!-- End Doctor Card -->
+
+        <!-- Footer Area -->
+        <footer id="footer1"></footer>
+        <!-- End Footer Area -->
+
+        <!-- Go Top -->
+        <div class="go-top">
+            <i class='bx bxs-upvote'></i>
+        </div>
+        <!-- End Go Top -->
+
+        <!-- jQuery first, then Bootstrap JS -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- Magnific -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- MeanMenu JS -->
+        <script src="assets/js/meanmenu.min.js"></script>
+        <!-- Nice Select JS -->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!-- Owl Carousel JS -->
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <!-- Jquery Mixitup JS -->
+        <script src="assets/js/jquery.mixitup.min.js"></script>
+        <!-- Jquery DateTimePicker JS -->
+        <script src="assets/js/jquery.datetimepicker.full.min.js"></script>
+        <!-- Form Validator JS -->
+        <script src="assets/js/form-validator.min.js"></script>
+        <!-- Contact JS -->
+        <script src="assets/js/contact-form-script.js"></script>
+        <!-- AjaxChimp JS -->
+        <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+        <!-- Custom JS -->
+        <script src="assets/js/custom.js"></script>
+
+        <script>
+            function initMenus() {
+                if (typeof jQuery !== "undefined" && typeof jQuery.fn.meanmenu !== "undefined") {
+                    jQuery('.mean-menu').meanmenu({
+                        meanScreenWidth: "1021"
+                    });
+                }
+            }
+
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header1").innerHTML = data;
+                    initMenus();
+                });
+
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footer1").innerHTML = data;
+                });
+        </script>
+
+    </body>
+</html>
