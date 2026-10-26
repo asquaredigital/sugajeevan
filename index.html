@@ -281,18 +281,49 @@
         }
 
         /* Keep the hero readable and prevent the oversized desktop banner */
-        .banner-slide-three,
-        .banner-slide-three .owl-stage-outer,
-        .banner-slide-three .owl-stage,
+        .banner-slide-three {
+          height: auto !important;
+          padding-bottom: 18px !important;
+        }
+        .banner-slide-three .owl-stage-outer {
+          overflow: hidden;
+          height: auto !important;
+        }
+        .banner-slide-three .owl-stage {
+          display: flex;
+          align-items: stretch;
+          height: auto !important;
+        }
         .banner-slide-three .owl-item {
+          height: auto !important;
           min-height: 0 !important;
         }
         .banner-three-area {
           min-height: 0 !important;
-          height: auto !important;
-          padding: 78px 0 64px !important;
+          height: 100% !important;
+          padding: 58px 0 34px !important;
           background-position: center center !important;
           background-size: cover !important;
+        }
+        /* Keep slider arrows below the banner content instead of over the CTA */
+        .banner-slide-three .owl-nav {
+          position: static !important;
+          display: flex !important;
+          justify-content: center !important;
+          align-items: center !important;
+          gap: 14px !important;
+          margin: 12px auto 0 !important;
+          padding: 0 !important;
+          transform: none !important;
+          width: 100%;
+        }
+        .banner-slide-three .owl-nav button,
+        .banner-slide-three .owl-nav button.owl-prev,
+        .banner-slide-three .owl-nav button.owl-next {
+          position: static !important;
+          float: none !important;
+          transform: none !important;
+          margin: 0 !important;
         }
         .banner-three-text {
           width: 100% !important;
@@ -396,8 +427,14 @@
           padding-right: 16px;
         }
         .banner-three-area {
-          padding-top: 62px !important;
-          padding-bottom: 48px !important;
+          padding-top: 48px !important;
+          padding-bottom: 28px !important;
+        }
+        .banner-slide-three {
+          padding-bottom: 12px !important;
+        }
+        .banner-slide-three .owl-nav {
+          margin-top: 8px !important;
         }
         .banner-three-text h1 {
           font-size: 31px !important;
