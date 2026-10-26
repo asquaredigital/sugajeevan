@@ -261,6 +261,153 @@
 
 
   </style>
+    
+    <!-- Mobile layout fixes -->
+    <style id="mobile-layout-fixes">
+      html, body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+      img, video, iframe {
+        max-width: 100%;
+      }
+      @media (max-width: 767px) {
+        .container {
+          width: 100%;
+          max-width: 100%;
+          padding-left: 22px;
+          padding-right: 22px;
+        }
+
+        /* Keep the hero readable and prevent the oversized desktop banner */
+        .banner-slide-three,
+        .banner-slide-three .owl-stage-outer,
+        .banner-slide-three .owl-stage,
+        .banner-slide-three .owl-item {
+          min-height: 0 !important;
+        }
+        .banner-three-area {
+          min-height: 0 !important;
+          height: auto !important;
+          padding: 78px 0 64px !important;
+          background-position: center center !important;
+          background-size: cover !important;
+        }
+        .banner-three-text {
+          width: 100% !important;
+          max-width: 100% !important;
+          padding: 0 !important;
+          margin: 0 !important;
+        }
+        .banner-three-text h1 {
+          font-size: clamp(32px, 8.5vw, 42px) !important;
+          line-height: 1.16 !important;
+          letter-spacing: -0.5px;
+          overflow-wrap: anywhere;
+          margin: 14px 0 22px !important;
+        }
+        .banner-three-text > span,
+        .banner-three-text .lang-content > span {
+          font-size: 17px !important;
+          line-height: 1.4 !important;
+        }
+        .banner-three-text p {
+          font-size: 17px !important;
+          line-height: 1.6 !important;
+          margin-bottom: 28px !important;
+        }
+        .b-three-btn {
+          display: flex !important;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 12px;
+        }
+        .banner-three-text .default-btn.three {
+          width: auto !important;
+          min-width: 150px;
+          max-width: 100%;
+          padding: 14px 24px !important;
+          margin: 0 !important;
+        }
+
+        /* Make common sections fit small screens without changing desktop layout */
+        .ptb-100 {
+          padding-top: 55px !important;
+          padding-bottom: 55px !important;
+        }
+        .pt-100 {
+          padding-top: 55px !important;
+        }
+        .pb-100 {
+          padding-bottom: 55px !important;
+        }
+        .section-title h2,
+        .section-title-three h2 {
+          font-size: 27px !important;
+          line-height: 1.25 !important;
+          overflow-wrap: anywhere;
+        }
+        .a-three-text p,
+        .why-card p,
+        .speciality-card p {
+          overflow-wrap: anywhere;
+        }
+        .why-card,
+        .speciality-card {
+          padding: 20px !important;
+          margin-bottom: 18px !important;
+        }
+        .appointment-three-img img,
+        .services-card-three img,
+        .single-gallery img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+        .gallery-menu ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 8px 14px;
+          padding-left: 0;
+        }
+        .gallery-menu li {
+          margin: 0 !important;
+        }
+        .doctors-list-card img {
+          height: 300px !important;
+          object-fit: cover;
+        }
+        .global-language-switch {
+          top: 8px !important;
+          right: 8px !important;
+          padding: 3px 6px !important;
+        }
+        .global-language-switch .lang-btn {
+          padding: 6px 10px !important;
+          font-size: 13px !important;
+        }
+      }
+
+      @media (max-width: 380px) {
+        .container {
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+        .banner-three-area {
+          padding-top: 62px !important;
+          padding-bottom: 48px !important;
+        }
+        .banner-three-text h1 {
+          font-size: 31px !important;
+        }
+        .banner-three-text p {
+          font-size: 16px !important;
+        }
+      }
+    </style>
+
     </head>
     
     <body>
