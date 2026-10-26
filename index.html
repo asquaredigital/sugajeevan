@@ -472,6 +472,68 @@
           color: #555 !important;
           text-shadow: none !important;
         }
+        /* Final fix: keep the entire doctor caption below the photo on mobile */
+        .doctors-list-slider .owl-stage,
+        .doctors-list-slider .owl-item,
+        .doctors-list-slider .doctors-list-card {
+          height: auto !important;
+          min-height: 0 !important;
+        }
+        .doctors-list-slider .doctors-list-card {
+          display: flex !important;
+          flex-direction: column !important;
+          align-items: stretch !important;
+          overflow: visible !important;
+        }
+        .doctors-list-slider .doctors-list-card > a {
+          display: block !important;
+          flex: 0 0 auto !important;
+          width: 100% !important;
+          line-height: normal !important;
+        }
+        .doctors-list-slider .doctors-list-card > a img {
+          width: 100% !important;
+          height: 300px !important;
+          object-fit: cover !important;
+          object-position: center top !important;
+          border-radius: 14px !important;
+        }
+        .doctors-list-slider .doctors-list-card .caption,
+        .doctors-list-slider .doctors-list-card .caption .c-text,
+        .doctors-list-slider .doctors-list-card .caption .c-text h3,
+        .doctors-list-slider .doctors-list-card .caption .c-text p {
+          position: static !important;
+          inset: auto !important;
+          float: none !important;
+          clear: both !important;
+          transform: none !important;
+          width: 100% !important;
+          height: auto !important;
+          max-height: none !important;
+          overflow: visible !important;
+          text-align: center !important;
+        }
+        .doctors-list-slider .doctors-list-card .caption {
+          flex: 0 0 auto !important;
+          padding: 14px 8px 18px !important;
+          margin: 0 !important;
+          background: transparent !important;
+        }
+        .doctors-list-slider .doctors-list-card .caption .c-text h3,
+        .doctors-list-slider .doctors-list-card .caption .c-text h3 a {
+          color: #222 !important;
+          font-size: 18px !important;
+          line-height: 1.35 !important;
+          font-weight: 700 !important;
+          text-shadow: none !important;
+        }
+        .doctors-list-slider .doctors-list-card .caption .c-text p {
+          color: #555 !important;
+          font-size: 13px !important;
+          line-height: 1.45 !important;
+          margin: 4px 0 0 !important;
+          text-shadow: none !important;
+        }
         .global-language-switch {
           top: 8px !important;
           right: 8px !important;
