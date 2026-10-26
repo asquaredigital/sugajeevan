@@ -569,7 +569,112 @@
       }
     </style>
 
-    </head>
+    
+<style id="doctor-captions-below-photo-all-devices">
+/* Doctor cards: photo first, name/designation below it on desktop and mobile */
+.doctors-list-slider .doctors-list-card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  height: auto !important;
+  min-height: 0 !important;
+  overflow: visible !important;
+  border-radius: 14px !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+.doctors-list-slider .doctors-list-card:hover {
+  box-shadow: none !important;
+  transform: none !important;
+}
+.doctors-list-slider .doctors-list-card > a {
+  display: block !important;
+  flex: 0 0 auto !important;
+  width: 100% !important;
+  line-height: normal !important;
+  overflow: hidden !important;
+  border-radius: 14px !important;
+}
+.doctors-list-slider .doctors-list-card > a img {
+  display: block !important;
+  width: 100% !important;
+  height: 340px !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+  border-radius: 14px !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+.doctors-list-slider .doctors-list-card .caption {
+  display: block !important;
+  position: static !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  flex: 0 0 auto !important;
+  margin: 0 !important;
+  padding: 14px 10px 18px !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  overflow: visible !important;
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  text-align: center !important;
+}
+.doctors-list-slider .doctors-list-card .caption .c-text,
+.doctors-list-slider .doctors-list-card .caption .c-text h3,
+.doctors-list-slider .doctors-list-card .caption .c-text p {
+  position: static !important;
+  inset: auto !important;
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  overflow: visible !important;
+  text-align: center !important;
+  text-shadow: none !important;
+}
+.doctors-list-slider .doctors-list-card .caption .c-text h3,
+.doctors-list-slider .doctors-list-card .caption .c-text h3 a {
+  margin-top: 0 !important;
+  margin-bottom: 5px !important;
+  color: #222 !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  text-decoration: none !important;
+  overflow-wrap: anywhere;
+}
+.doctors-list-slider .doctors-list-card .caption .c-text p {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  color: #555 !important;
+  font-size: 14px !important;
+  line-height: 1.45 !important;
+}
+.doctors-list-slider .owl-stage,
+.doctors-list-slider .owl-item {
+  height: auto !important;
+}
+@media (max-width: 767px) {
+  .doctors-list-slider .doctors-list-card > a img { height: 300px !important; }
+  .doctors-list-slider .doctors-list-card .caption { padding: 14px 8px 18px !important; }
+  .doctors-list-slider .doctors-list-card .caption .c-text h3,
+  .doctors-list-slider .doctors-list-card .caption .c-text h3 a { font-size: 18px !important; }
+  .doctors-list-slider .doctors-list-card .caption .c-text p { font-size: 13px !important; }
+}
+</style>
+
+</head>
     
     <body>
       
